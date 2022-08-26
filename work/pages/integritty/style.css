@@ -1,0 +1,142 @@
+
+.int-hero-container{
+    position: relative;
+    top: 120px;
+    margin: 124px 0 0 0;
+}
+
+.int-hero{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: -108px;
+}
+
+.int-hero img{
+    margin: 0 auto;
+    width: 1440px;
+}
+.int-hero-2{
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+}
+.int-hero-2 img{
+    margin-left: 92px;
+    width: 1348px;
+}
+
+/* .wareiq-info-container{
+    position: relative;
+    padding: 102px 0 78px 0;
+    top: 120px;
+    height: 500px;
+}
+
+.wareiq-info {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+} */
+.int-info-banner-container{
+    position: relative;
+    top: 20px;
+    background: #151444;
+    height: 635px;
+    z-index: -1;
+}
+.int-info-banner{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.int-info-banner img{
+    width: 1290px;
+    position: relative;
+    top: 190px;
+}
+.f2p-platform-container{
+    padding: 200px 0 200px 0;
+}
+.f2p-platform-img{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.f2p-platform-img img{
+    width: 1290px;
+}
+
+.f2p-flow-1{
+    height: 480px;
+    background: #053E45;
+}
+
+.f2p-flow-1 img{
+    position: relative;
+    top: -150px;
+}
+
+.f2p-flow-2{
+    height: 1120px;
+    background: #E6E9F4;
+}
+
+.f2p-flow-2 img{
+    position: relative;
+    top: 224px;
+}
+.int-roles-container{
+    margin-bottom: 200px;
+}
+.int-roles{
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.int-roles * {
+    padding: 120px 0;
+    width: 1140px;
+}
+
+.int-branding img, .int-branding{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* .vitran-user-flow-container{
+    height: 639px;
+    background: #043A2C;
+    position: relative;
+    top: -200px;
+}
+
+.vitran-user-flow{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: -260px;
+} */
+
+.style-guide-container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.style-guide{
+    margin-left: 150px;
+}
+
+.int-dist{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.int-dist-items{
+    margin: 190px auto;
+}
+
+.int-dist-items img{
+    width: 1440px;
+}

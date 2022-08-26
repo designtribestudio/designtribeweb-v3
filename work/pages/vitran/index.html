@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../../../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../../../assets/images/icons/Asset 13.svg">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=100vw, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Design Tribe - Vitran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="heroscript.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70RE4EZWV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-70RE4EZWV9');
+    </script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <div class="content-wrapper" id="content-wrapper">
+            <div class="header-container">
+                <div class="header">
+                    <a href="./"><img class="logo" src="../../../../../assets/images/dt-logo.svg" alt=""></a>
+
+                    <div class="topnav" id="myTopnav">
+                        <!-- ******* Change link paths ******* -->
+                        <a class="nav-link"></a>
+                        <a class="nav-link" href="./">Home</a>
+                        <a class="nav-link" href="./about/">About Us</a>
+                        <a class="nav-link active" href="./work/">Work</a>
+                        <a class="nav-link " href="./services/">Services</a>
+                        <a class="nav-link" href="./contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-mobile">
+                        <button class="icon" onclick="myFunction()">
+                            <img id="icon" src="assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="topnav-menu" id="topnav-menu">
+                    <div class="topnav-menu-links">
+                        <a class="nav-link" href="./">Home</a>
+                        <a class="nav-link" href="./about/">About Us</a>
+                        <a class="nav-link active" href="./work/">Work</a>
+                        <a class="nav-link " href="./services/">Services</a>
+                        <a class="nav-link" href="./contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-img">
+                        <img src="../../../assets/images/mobile-nav-logo.png" style="width: 106px" alt="">
+                    </div>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    var menu = document.getElementById("topnav-menu");
+                    var icon = document.getElementById("icon");
+                    var head = document.getElementById("content-wrapper");
+                    if (menu.className == "topnav-menu") {
+                        menu.className = "topnav-menu-active";
+                        icon.src = "assets/images/cancel.png";
+                        head.style.background = "#006A4E";
+                    }
+                    else {
+                        menu.className = "topnav-menu";
+                        icon.src = "assets/images/stroke.png"
+                        head.style.background = "white";
+                    }
+                }
+            </script>
+        </div>
+        <div class="vitran-hero-container">
+            <div class="vitran-hero">
+                <img src="./vitran-hero-img.svg" alt="">
+            </div>
+        </div>
+        <div class="vitran-info-container">
+            <div class="vitran-info">
+                <img src="./vitran-info.svg" alt="">
+            </div>
+        </div>
+        <div class="vitran-info-banner-container">
+            <div class="vitran-info-banner">
+                <img src="./Group 12379.svg" alt="">
+            </div>
+        </div>
+        <div class="vitran-fmcg-container">
+            <div class="vitran-fmcg-img">
+                <img src="./Group 12380.svg" alt="">
+            </div>
+
+            <div class="vitran-fmcg-content">
+                <div class="inner">
+                    <img src="./Group 12381.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="vitran-roles-container">
+            <div class="vitran-roles">
+                <img src="./Group 12382.svg" alt="">
+                <img src="./Group 12384.svg" alt="">
+            </div>
+        </div>
+
+        <div class="vitran-user-flow-container">
+            <div class="vitran-user-flow">
+                <img src="./Group 12385.svg" alt="">
+            </div>
+        </div>
+
+        <div class="style-guide-container">
+            <div class="style-guide">
+                <img src="./style-guide.svg" alt="">
+                <img src="./typeface.svg" alt="">
+            </div>
+        </div>
+
+        <div class="vitran-dist-container">
+            <div class="vitran-dist">
+                <div class="vitran-dist-items"><img src="./distribution.svg" alt=""></div>
+                <div class="vitran-dist-items"><img src="./sales.svg" alt=""></div>
+                <div class="vitran-dist-items"><img src="./retail.svg" alt=""></div>
+                <div class="vitran-dist-items"><img src="./titan.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>

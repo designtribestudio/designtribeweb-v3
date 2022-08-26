@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../featured.css">
+        <link rel="stylesheet" href="../../footer-mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon"  type="image/png"  href="../../assets/images/icons/Asset 13.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;700&display=swap" rel="stylesheet">
+        <title>Services - User Research</title>
+    </head>
+    <body>
+    <div class="body-wrap">
+        <div class="content-wrapper" id="content-wrapper">
+            <div class="header-container">
+                <div class="header">
+                    <a href="../../"><img class="logo" src="../../assets/images/dt-logo.svg" alt=""></a>
+                    
+                    <div class="topnav" id="myTopnav">
+                        <a class="nav-link"></a>
+                        <a class="nav-link" href="../../">Home</a> 
+                        <a class="nav-link" href="../../about/">About Us</a>
+                        <a class="nav-link" href="../../work">Work</a>
+                        <a class="nav-link active" href="">Services</a>
+                        <a class="nav-link" href="../../contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-mobile">
+                        <button class="icon"  onclick="myFunction()">
+                            <img id="icon" src="../../assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="topnav-menu" id="topnav-menu">
+                    <div class="topnav-menu-links">
+                        <a class="nav-link" href="../../">Home</a> 
+                        <a class="nav-link" href="../../about/">About Us</a>
+                        <a class="nav-link" href="../../work/">Work</a>
+                        <a class="nav-link active" href="">Services</a>
+                        <a class="nav-link" href="../../contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-img">
+                        <img src="../../assets/images/mobile-nav-logo.png" style="width: 106px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="services" id="services-desktop">
+                <div class="services-content">
+                    <div class="services-btn-container">
+                        <div class="s-btn-top">
+                            <a href="../"><button class="services-btn"> User Experience</button></a>
+                            <a href=""><button class="services-btn services-btn-active"> User Research & Strategy</button></a>
+                            <a href="../presentation/"><button class="services-btn"> Presentation Design</button></a>
+                            <a href="../branding/"><button class="services-btn">Visual and Branding</button></a>
+                            <a href="../other/"><button class="services-btn"> Other Services</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction(){
+                var menu = document.getElementById("topnav-menu");
+                var icon = document.getElementById("icon");
+                var head = document.getElementById("content-wrapper");
+                if (menu.className == "topnav-menu"){
+                    head.style.background = "#006A4E";
+                    menu.className = "topnav-menu-active";
+                    icon.src="../../assets/images/cancel.png";
+                }
+                else{
+                    head.style.background = "white";
+                    menu.className="topnav-menu";
+                    icon.src="../../assets/images/stroke.png"
+                }
+            }
+        </script>
+
+        <div class="content-w">
+            <div class="services" id="services-mobile">
+                <div class="services-content">
+                    <div class="services-head">Services we offer:</div>
+                    <div class="services-btn-container">
+                        <div class="s-btn-top">
+                            <a href="../"><button class="services-btn"> User Experience</button></a>
+                            <a href=""><button class="services-btn services-btn-active"> User Research & Strategy</button></a>
+                            <a href="../presentation/"><button class="services-btn"> Presentation Design</button></a>
+                            <a href="../branding/"><button class="services-btn">Visual and Branding</button></a>
+                            <a href="../other/"><button class="services-btn"> Other Services</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero">
+                <!-- <img src="./uxui-head.png" alt=""> -->
+                <div class="hero-text">
+                    <div class="hero-head">What is User Research?</div>
+                    <div class="hero-sub">User research focuses on understanding user behaviours, needs, and motivations through observation techniques, task analysis, and other feedback methodologies. Our team will utilize various methods to help you find the right solutions and design products that meet your users’ expectations and deliver value to your customers.</div>
+                </div>
+                <div class="hero-img">
+                    <img class="brand-pic" src="../../assets/images/ur.gif" alt="">
+                </div>
+            </div>
+
+            <div class="hero-mobile">
+                <img src="../../assets/images/ur.gif" alt="">
+                <h1>What is User Research?</h1>
+                <p>User research focuses on understanding user behaviours, needs, and motivations through observation techniques, task analysis, and other feedback methodologies. Our team will utilize various methods to help you find the right solutions and design products that meet your users’ expectations and deliver value to your customers.</p>
+            </div>
+
+        </div>
+
+        <!-- <div class="nav-banner">
+            <div class="nav-banner-content">
+                <p>All Services</p>
+                <img src="../images/upper arrow.svg" alt="">
+                <div class="link-container"><a href="../">User Experience</a></div>
+                <div class="link-container link-active"><a href="">User Research</a></div>
+                <div class="link-container"><a href="../presentation/">Presentation Design</a></div>
+                <div class="link-container"><a href="../branding/">Visual and Branding</a></div>
+                <div class="link-container"><a href="../other/">Other Services</a></div>
+            </div>
+        </div> -->
+        
+        <div class="how">
+            <img src="./ur-how.png" alt="">
+        </div>
+
+        <div class="how-mobile">
+            <div class="how-head">
+                How User Research can help to improve your product
+            </div>
+            <div class="how-content">
+                <div class="how-topic">
+                    <div class="how-q">
+                        Know your customer
+                    </div>
+                    <div class="how-a">
+                        We conduct user interviews and testing to better understand your customers 
+                    </div>
+                </div>
+                <div class="how-topic">
+                    <div class="how-q">
+                        Optimize your development
+                    </div>
+                    <div class="how-a">
+                        More time and focus can be given to features which prove most useful to the target customer. 
+                    </div>
+                </div>
+                <div class="how-topic">
+                    <div class="how-q">
+                        Improve Customer Satisfaction
+                    </div>
+                    <div class="how-a">
+                        How does the user feel when interacting with your product is essential to truly improve customer satisfaction and experience.
+                    </div>
+                </div>
+                <div class="how-topic">
+                    <div class="how-q">
+                        Improve conversion rate 
+                    </div>
+                    <div class="how-a">
+                        By displaying only relevant information to the user, you will notice higher conversions and increase In your customer number.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="misc">
+            <div class="misc-container">
+                <img src="./ur-1.png" alt="">
+
+                <img src="./ur-2.png" alt="">
+
+                <img src="./ur-3.png" alt="">
+
+                
+            </div>
+            
+        </div>
+
+        <div class="info-mobile">
+            <div class="info-head">
+                UX Research Services 
+            </div>
+            <div class="info-topic">
+                <div class="info-q">
+                    Discovery research 
+                </div>
+                <div class="info-a">
+                    Through discovery research, we aim to understand the user’s needs and pain points. We can determine the product-market fit and help you prioritize your next steps in the product development process. 
+                </div>
+            </div>
+            <img src="./ur-img-1.png" alt="">
+            <div class="info-topic">
+                <div class="info-q">
+                    UX Audit
+                </div>
+                <div class="info-a">
+                    We conduct a holistic usability evaluation of your product’s user interface to understand how people interact with it. We define and present the core usability issues, which, if tackled, can improve your product’s business performance.
+                </div>
+            </div>
+            <img src="./ur-img-2.png" alt="">
+            <div class="info-topic">
+                <div class="info-q">
+                    UX Research Team
+                </div>
+                <div class="info-a">
+                    We continuously work as a part of your team or assist at any stage of your product development cycle. We can help you do user interviews or test prototypes, and we make suggestions on how to implement research findings effectively.
+                </div>
+            </div>
+            <img src="./ur-img-3.png" alt="">
+            
+        </div>
+
+        <div class="featured-container" style="margin-top: 5vw; margin-bottom: 5vw;">
+            <div class="featured fade-in">
+                <div class="featured-cards">
+                    <div class="fc1 fc">
+                        <div class="work-card-text">
+                            <div class="work-card-head">E-Commerce Platform in India</div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Story under NDA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fc2 fc">
+                        <div class="work-card-text">
+                            <div class="work-card-head">FMCG Distribution <br> Eco-System</div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Story under NDA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="featured-container-mobile">
+            <p>View our related work here</p>
+            <div class="featured-cards-mobile">
+                <div class="card-mobile cm2"><div class="nda-tag">Story under NDA</div></div>
+            </div>
+        </div>
+
+        
+        <div class="sub-footer fade-in">
+            <div class="sub-footer-content">
+                <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
+                <a href="../../contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in Touch</button></a>
+            </div>
+        </div>
+        <div class="footer-true">
+            <div class="company-foot">
+                <div class="company-details">
+                    <div class="address">
+                        <img class="ad-logo" src="../../services/images/Group 134.png" alt="">
+                        <img class="footer-vl" src="../../services/images/Rectangle 98.png" alt="" style="height: 102px;">
+                        <p><span style="font-weight:bold;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011</p>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-links">
+                            <a href="../../services/uxui/" style="text-decoration: none;">Services</a>
+                            <a href="../../about/" style="text-decoration: none;">About</a>
+                            <a href="../../work/" style="text-decoration: none;">Work</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="c../../ontact/" target="_blank"><img src="../../assets/images/mail.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img src="../../assets/images/linkedin.svg" alt=""></a>
+                            <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img src="../../assets/images/ig.svg" alt=""></a>
+                            <a href="https://www.facebook.com/designtribestudio" target="_blank"><img src="../../assets/images/fb.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mobile">
+            <div class="footer-mobile-content">
+                <div class="footer-mobile-top">
+                    <div class="footer-mobile-top-img">
+                        <img src="../../assets/images/mobile-nav-logo.png" style="width: 106px;" alt="">
+                    </div>
+                    <div class="footer-mobile-vl"></div>
+                    <div class="footer-mobile-address">
+                        <span style="font-weight: 600;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011
+                    </div>
+                </div>
+                <div class="footer-mobile-bottom">
+                    <div class="mobile-contact-links">
+                        <a href="../../services/">Services</a>
+                        <a href="../../about/">About</a>
+                        <a href="../../work/">Work</a>
+                    </div>
+                    <div class="mobile-social-links">
+                        <a href="../../contact/" target="_blank"><img src="../../assets/images/mail-large.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img src="../../assets/images/linkedin.svg" alt=""></a>
+                        <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img src="../../assets/images/ig.svg" alt=""></a>
+                        <a href="https://www.facebook.com/designtribestudio" target="_blank"><img src="../../assets/images/fb.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="../script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon"  type="image/png"  href="../../assets/images/icons/Asset 13.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Work - Other Services</title>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <div class="header-container">
+                <div class="header">
+                    <a href="../../"><img class="logo" src="../../assets/images/dt-logo.svg" alt=""></a>
+                    
+                    <div class="topnav" id="myTopnav">
+                        <a class="nav-link"></a>
+                        <a class="nav-link" href="../../">Home</a> 
+                        <a class="nav-link" href="../../about/">About Us</a>
+                        <a class="nav-link active" href="">Work</a>
+                        <a class="nav-link" href="../../services/">Services</a>
+                        <a class="nav-link" href="../../contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-mobile">
+                        <button class="icon"  onclick="myFunction()">
+                            <img id="icon" src="../../assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="topnav-menu" id="topnav-menu">
+                    <div class="topnav-menu-links">
+                        <a class="nav-link" href="../../">Home</a> 
+                        <a class="nav-link" href="../../about/">About Us</a>
+                        <a class="nav-link active" href="">Work</a>
+                        <a class="nav-link" href="../../services/">Services</a>
+                        <a class="nav-link" href="../../contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction(){
+                var menu = document.getElementById("topnav-menu");
+                var icon = document.getElementById("icon");
+                if (menu.className == "topnav-menu"){
+                    menu.className = "topnav-menu-active";
+                    icon.src="../../assets/images/cancel.png";
+                }
+                else{
+                    menu.className="topnav-menu";
+                    icon.src="../../assets/images/stroke.png"
+                }
+            }
+        </script>
+        <div class="content-w">
+            <div class="services">
+                <div class="services-content">
+                    <div class="services-head">Let’s see the stories</div>
+                    <div class="services-btn-container">
+                        <div class="s-btn-top">
+                            <a href="../"><button class="services-btn"> All</button></a>
+                            <a href="../uxui"><button class="services-btn ">User Experience</button></a>
+                            <a href="../user-research"><button class="services-btn"> User Research</button></a>
+                            <a href="../presentation"><button class="services-btn">Presentation Design</button></a>
+                        </div>
+                        <div class="s-btn-bottom">
+                            <a href="../branding"><button class="services-btn">Visual and Branding</button></a>
+                            <a href=""><button class="services-btn services-btn-active">Other Services</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <!-- <div class="work-cards">
+                <div class="work-card-col">
+                        <div class="work-card" style="background: url('Group\ 49.png'); width: 358px; height: 585px;">
+                            <div class="work-card-text">
+                                <div class="work-card-head">Personalised Food 1<br>Experience</div>
+                                <div class="view-story">view story</div>
+                            </div>
+                        </div>
+                        <div class="work-card" style="background: url('Group\ 49.png'); width: 358px; height: 585px;">
+                            <div class="work-card-text">
+                                <div class="work-card-head">Personalised Food 2<br>Experience</div>
+                                <div class="view-story">view story</div>
+                            </div>
+                        </div>
+                        <div class="work-card" style="background: url('Group\ 49.png'); width: 358px; height: 585px;">
+                            <div class="work-card-text">
+                                <div class="work-card-head">Personalised Food 3<br>Experience</div>
+                                <div class="view-story">view story</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="work-card-col">
+                    <div class="work-card" style="background: url('Group\ 47.png'); width: 358px; height: 585px;">
+                        <div class="work-card-text">
+                            <div class="work-card-head">Personalised Food 4<br>Experience</div>
+                            <div class="view-story">view story</div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url('Group\ 47.png'); width: 358px; height: 585px;">
+                        <div class="work-card-text">
+                            <div class="work-card-head">Personalised Food 5<br>Experience</div>
+                            <div class="view-story">view story</div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url('Group\ 47.png'); width: 358px; height: 585px;">
+                        <div class="work-card-text">
+                            <div class="work-card-head">Personalised Food 6<br>Experience</div>
+                            <div class="view-story">view story</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card-col">
+                    <div class="work-card" style="background: url('Group\ 49.png'); width: 358px; height: 585px;">
+                        <div class="work-card-text">
+                            <div class="work-card-head">Personalised Food 7<br>Experience</div>
+                            <div class="view-story">view story</div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url('Group\ 49.png'); width: 358px; height: 585px;">
+                        <div class="work-card-text">
+                            <div class="work-card-head">Personalised Food 8<br>Experience</div>
+                            <div class="view-story">view story</div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url('Group\ 49.png'); width: 358px; height: 585px;">
+                        <div class="work-card-text">
+                            <div class="work-card-head">Personalised Food 9<br>Experience</div>
+                            <div class="view-story">view story</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+               
+        </div>
+
+        <div class="featured-container">
+            <div class="featured fade-in">
+                <!-- <h1>Featured Stories</h1>
+                <p>Take a look at what we have done</p> -->
+                <div class="featured-cards">
+                    <div class="fc1 fc">
+                        <div class="work-card-text">
+                            <div class="work-card-head">FMCG Ecosystem</div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Story under NDA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fc2 fc">
+                        <div class="work-card-text">
+                            <div class="work-card-head">E-Commerce Platform in India</div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Story under NDA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-cards">
+                    <div class="featured-cards-2">
+                        <div class="fc3 fc">
+                            <div class="work-card-text">
+                                <div class="work-card-head">Farm to plate</div>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fc5 fc">
+                            <div class="work-card-text">
+                                <div class="work-card-head">One stop health needs</div>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-cards-2">
+                        <div class="fc4 fc">
+                            <div class="work-card-text">
+                                <div class="work-card-head">Personalised Food Experience</div>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fc6 fc">
+                            <div class="work-card-text">
+                                <div class="work-card-head">AI Banking</div>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-cards">
+                    <div class="fc7 fc">
+                        <div class="work-card-text">
+                            <div class="work-card-head">A trustworthy security system</div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Story under NDA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fc8 fc">
+                        <div class="work-card-text">
+                            <div class="work-card-head">Driving business excellence</div>
+                            <div class="tooltip">
+                                <span class="tooltiptext">Story under NDA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="featured-btns">
+                    <button><img src="assets/images/arrow-left.svg" alt=""></button>
+                    <div class="dots-container">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <button><img src="assets/images/arrow-right.svg" alt=""></button>
+                </div>
+                <a href="./work/" style="text-decoration: none;"><div class="exp-btn f-view">View all</div></a> -->
+            </div>
+        </div>
+
+        <div class="sub-footer fade-in">
+            <div class="sub-footer-content">
+                <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
+                <a href="contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in Touch</button></a>
+            </div>
+        </div>
+
+        <div class="footer-true">
+            <div class="company-foot">
+                <div class="company-details">
+                    <div class="address">
+                        <img class="ad-logo" src="../../assets/images/Group 134.svg" alt="">
+                        <img class="footer-vl" src="../../services/images/Rectangle 98.png" alt="" style="height: 102px;">
+                        <p><span style="font-weight:bold;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011</p>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-links">
+                            <a href="../../services/" style="text-decoration: none;">Services</a>
+                            <a href="../../about/" style="text-decoration: none;">About</a>
+                            <a href="../../work/" style="text-decoration: none;">Work</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="contact/" target="_blank"><img src="../../assets/images/mail.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img src="../../assets/images/linkedin.svg" alt=""></a>
+                            <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img src="../../assets/images/ig.svg" alt=""></a>
+                            <a href="https://www.facebook.com/designtribestudio" target="_blank"><img src="../../assets/images/fb.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script>
+            var x = document.getElementById("sep-img");
+            function hover(x) {
+                x.setAttribute('src', 'assets/images/mouse-up.svg');
+                }
+
+            function unhover(x) {
+                x.setAttribute('src', 'assets/images/sub-hero.svg');
+                }
+        </script> -->
+        <script src="script.js"></script>
+    </body>
+</html>

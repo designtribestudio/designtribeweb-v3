@@ -1,0 +1,100 @@
+
+.wareiq-hero-container{
+    position: relative;
+    top: 120px;
+    height: 398px;
+    margin: 124px 0 0 0;
+    background: linear-gradient(90deg, #00406E 36.35%, #329CB6 100%);
+}
+
+.wareiq-hero{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    top: -108px;
+}
+
+.wareiq-hero img{
+    margin: 0 auto;
+}
+
+.wareiq-info-container{
+    position: relative;
+    padding: 102px 0 78px 0;
+    top: 120px;
+    height: 500px;
+}
+
+.wareiq-info {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+.wareiq-info-banner-container{
+    position: relative;
+    background: #032534;
+    height: 555px;
+    z-index: -1;
+}
+.wareiq-info-banner{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 136px 0 0 0;
+}
+.wareiq-platform-container{
+    position: relative;
+}
+.wareiq-platform-img{
+    width: 1440px;
+    margin: 50px auto 0 auto;
+}
+
+.wareiq-platform-img img{
+    width: 1440px;
+}
+
+
+.wareiq-roles{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.wareiq-roles * {
+    padding: 120px 0;
+}
+
+/* .vitran-user-flow-container{
+    height: 639px;
+    background: #043A2C;
+    position: relative;
+    top: -200px;
+}
+
+.vitran-user-flow{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: -260px;
+} */
+
+.style-guide-container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.style-guide{
+    margin-left: 150px;
+}
+
+.wareiq-dist{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.wareiq-dist-items{
+    margin: 190px auto;
+}
+
+.wareiq-dist-items img{
+    width: 1440px;
+}

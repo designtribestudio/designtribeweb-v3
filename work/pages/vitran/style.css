@@ -1,0 +1,96 @@
+
+.vitran-hero-container{
+    position: relative;
+    top: 120px;
+    height: 913.5px;
+    padding: 69px 0 0 0;
+    background: linear-gradient(123.76deg, #72132C 5.09%, #BF345E 37.38%, #72132C 82.03%);
+backdrop-filter: blur(61.0169px);
+}
+
+.vitran-hero{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.vitran-hero img{
+    margin: 0 auto;
+}
+
+.vitran-info-container{
+    position: relative;
+    padding: 102px 0 78px 0;
+    top: 120px;
+    height: 500px;
+}
+
+.vitran-info {
+    width: 1140px;
+    margin: 0 auto;
+}
+.vitran-info-banner-container{
+    position: relative;
+}
+.vitran-info-banner{
+    width: 1440px;
+    margin: 0 auto;
+}
+.vitran-fmcg-container{
+    position: relative;
+    z-index: 1;
+}
+.vitran-fmcg-img{
+    width: 1440px;
+    margin: 50px auto 0 auto;
+}
+
+.vitran-fmcg-content{
+    position: relative;
+    top: -83px;
+    z-index: -1;
+    height: 508px;
+    background: #422C57;
+}
+
+.vitran-fmcg-content .inner{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 130px 0 0 0;
+}
+
+.vitran-roles{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.vitran-user-flow-container{
+    height: 639px;
+    background: #043A2C;
+    position: relative;
+    top: -200px;
+}
+
+.vitran-user-flow{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: -260px;
+}
+
+.style-guide-container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.style-guide{
+    margin-left: 150px;
+}
+
+.vitran-dist{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.vitran-dist-items{
+    margin: 190px auto;
+}

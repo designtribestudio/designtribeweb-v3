@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./footer-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/images/icons/Asset 13.svg">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=100vw, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Design Tribe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="heroscript.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70RE4EZWV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-70RE4EZWV9');
+    </script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <div class="content-wrapper" id="content-wrapper">
+            <div class="header-container">
+                <div class="header">
+                    <a href="./"><img class="logo" src="assets/images/dt-logo.svg" alt=""></a>
+
+                    <div class="topnav" id="myTopnav">
+                        <a class="nav-link"></a>
+                        <a class="nav-link active" href="./">Home</a>
+                        <a class="nav-link" href="./about/">About Us</a>
+                        <a class="nav-link" href="./work/">Work</a>
+                        <a class="nav-link " href="./services/">Services</a>
+                        <a class="nav-link" href="./contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-mobile">
+                        <button class="icon" onclick="myFunction()">
+                            <img id="icon" src="assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="topnav-menu" id="topnav-menu">
+                    <div class="topnav-menu-links">
+                        <a class="nav-link active" href="./">Home</a>
+                        <a class="nav-link" href="./about/">About Us</a>
+                        <a class="nav-link" href="./work/">Work</a>
+                        <a class="nav-link " href="./services/">Services</a>
+                        <a class="nav-link" href="./contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-img">
+                        <img src="assets/images/mobile-nav-logo.png" style="width: 106px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var menu = document.getElementById("topnav-menu");
+                var icon = document.getElementById("icon");
+                var head = document.getElementById("content-wrapper");
+                if (menu.className == "topnav-menu") {
+                    menu.className = "topnav-menu-active";
+                    icon.src = "assets/images/cancel.png";
+                    head.style.background = "#006A4E";
+                }
+                else {
+                    menu.className = "topnav-menu";
+                    icon.src = "assets/images/stroke.png"
+                    head.style.background = "white";
+                }
+            }
+        </script>
+
+        <div class="content-w">
+            <div class="hero-container fade-in">
+                <div class="hero">
+
+                    <!-- <div class="hero-path fade-in">
+                        <img id="h-img" src="assets/images/hero-img.png" alt="">
+                    </div> -->
+                </div>
+                <div class="hero-text fade-in">
+                    <p id="h-top">A UXUI Studio Company</p>
+                    <h1 id="h-mid" class="">Let’s tell stories through <br>
+                        <a href="" style="text-decoration: none; color: black;" class="typewrite" data-period="2000"
+                            data-type='[ "Research", "User Experience", "UX Strategy", "Visual Design", "Branding", "Business Presentation" ]'>
+                            <span class="wrap" style="height: 72px; display: block;">
+                            </span>
+                        </a>
+                        <!-- <span>
+                            <ul>
+                                <li>Research</li>
+                                <li>UX Strategy</li>
+                                <li>User Experience</li>
+                                <li>Visual & Branding</li>
+                                <li>Business Presentation</li>
+                            </ul>
+                        </span> -->
+                    </h1>
+                    <div class="highlighted">
+                        <div class="high-long"></div>
+                        <div class="high-short"></div>
+                        <div class="high-short"></div>
+                    </div>
+
+                    <p id="h-bottom">We help brands and businesses create, express and deliver value through human
+                        centered design.</p>
+                    <a href="#more-btn-mobile" style="text-decoration: none; color: white;"><button id="m-stories">
+                            See Stories
+                        </button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners-container fade-in" id="partners-container">
+            <div class="partners-content-outer">
+                <div class="partner" id="p1"><img src="assets/images/partners/pb.png" alt=""
+                        onmouseover="this.src='assets/images/partners/pb-c.png'"
+                        onmouseout="this.src='assets/images/partners/pb.png'"></div>
+
+                <div class="partner " id="p4"><img src="assets/images/partners/giz.png" alt=""
+                        onmouseover="this.src='assets/images/partners/giz-c.png'"
+                        onmouseout="this.src='assets/images/partners/giz.png'"></div>
+
+                <div class="partner" id="p2"><img src="assets/images/partners/dn.png" alt=""
+                        onmouseover="this.src='assets/images/partners/dn-c.png'"
+                        onmouseout="this.src='assets/images/partners/dn.png'"></div>
+
+                <div class="partner " id="p3"> <img src="assets/images/partners/prometric.png" alt=""
+                        onmouseover="this.src='assets/images/partners/prometric-c.png'"
+                        onmouseout="this.src='assets/images/partners/prometric.png'"></div>
+
+                <div class="partner" id="p6"><img src="assets/images/partners/wareiq.png" alt=""
+                        onmouseover="this.src='assets/images/partners/wareiq-c.png'"
+                        onmouseout="this.src='assets/images/partners/wareiq.png'"></div>
+            </div>
+
+            <div class="more" id="more">
+                <div class="more-container">
+                    <div class="partner fade-in" id="p5"><img src="assets/images/partners/lybrae.png" alt=""
+                            onmouseover="this.src='assets/images/partners/lybrae-c.png'"
+                            onmouseout="this.src='assets/images/partners/lybrae.png'"></div>
+
+                    <div class="partner fade-in" id="p7"><img src="assets/images/partners/neopay.png" alt=""
+                            onmouseover="this.src='assets/images/partners/neopay-c.png'"
+                            onmouseout="this.src='assets/images/partners/neopay.png'"></div>
+
+                    <div class="partner fade-in" id="p8"><img src="assets/images/partners/kmg.png" alt=""
+                            onmouseover="this.src='assets/images/partners/kmg-c.png'"
+                            onmouseout="this.src='assets/images/partners/kmg.png'"></div>
+
+                    <div class="partner fade-in" id="p9"><img src="assets/images/partners/paramount.png" alt=""
+                            onmouseover="this.src='assets/images/partners/paramount-c.png'"
+                            onmouseout="this.src='assets/images/partners/paramount.png'"></div>
+
+                    <div class="partner fade-in" id="p10"><img src="assets/images/partners/cs.png" alt=""
+                            onmouseover="this.src='assets/images/partners/cs-c.png'"
+                            onmouseout="this.src='assets/images/partners/cs.png'"></div>
+
+                    <div class="partner fade-in" id="p11"><img src="assets/images/partners/pAI.png" alt=""
+                            onmouseover="this.src='assets/images/partners/pAI-c.png'"
+                            onmouseout="this.src='assets/images/partners/pAI.png'"></div>
+
+                    <div class="partner fade-in" id="p12"><img src="assets/images/partners/integritty.png" alt=""
+                            onmouseover="this.src='assets/images/partners/integritty-c.png'"
+                            onmouseout="this.src='assets/images/partners/integritty.png'"></div>
+
+                    <div class="partner fade-in" id="p13"><img src="assets/images/partners/cofrsh.png" alt=""
+                            onmouseover="this.src='assets/images/partners/cofrsh-c.png'"
+                            onmouseout="this.src='assets/images/partners/cofrsh.png'"></div>
+
+                    <div class="partner fade-in" id="p14"><img src="assets/images/partners/ideacrest.png" alt=""
+                            onmouseover="this.src='assets/images/partners/ideacrest-c.png'"
+                            onmouseout="this.src='assets/images/partners/ideacrest.png'"></div>
+
+                    <div class="partner fade-in" id="p15"><img src="assets/images/partners/absolute.png" alt=""
+                            onmouseover="this.src='assets/images/partners/absolute-c.png'"
+                            onmouseout="this.src='assets/images/partners/absolute.png'"></div>
+
+                    <div class="partner fade-in" id="p16"><img src="" alt=""></div>
+
+                </div>
+            </div>
+            <div class="p-btn-container">
+                <button class="more-btn" id="more-btn" onclick="more()">
+                    See more
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="partners-container-mobile fade-in" id="partners-container-mobile">
+            <div class="partners-outer-mobile">
+                <div class="partner-outer-top">
+                    <div class="partner" id="p1"><img src="assets/images/partners/pb.png" alt=""
+                            onmouseover="this.src='assets/images/partners/pb-c.png'"
+                            onmouseout="this.src='assets/images/partners/pb.png'"></div>
+
+                    <div class="partner " id="p4"><img src="assets/images/partners/giz.png" alt=""
+                            onmouseover="this.src='assets/images/partners/giz-c.png'"
+                            onmouseout="this.src='assets/images/partners/giz.png'"></div>
+
+                    <div class="partner" id="p2"><img src="assets/images/partners/dn.png" alt=""
+                            onmouseover="this.src='assets/images/partners/dn-c.png'"
+                            onmouseout="this.src='assets/images/partners/dn.png'"></div>
+                </div>
+
+                <div class="partner-outer-bottom">
+                    <div class="partner " id="p3"> <img src="assets/images/partners/prometric.png" alt=""
+                            onmouseover="this.src='assets/images/partners/prometric-c.png'"
+                            onmouseout="this.src='assets/images/partners/prometric.png'"></div>
+
+                    <div class="partner" id="p6"><img src="assets/images/partners/wareiq.png" alt=""
+                            onmouseover="this.src='assets/images/partners/wareiq-c.png'"
+                            onmouseout="this.src='assets/images/partners/wareiq.png'"></div>
+                </div>
+            </div>
+
+            <div class="more-mobile" id="more-mobile">
+                <div class="more-container-mobile">
+                    <div class="partner fade-in" id="p5"><img src="assets/images/partners/lybrae.png" alt=""
+                            onmouseover="this.src='assets/images/partners/lybrae-c.png'"
+                            onmouseout="this.src='assets/images/partners/lybrae.png'"></div>
+
+                    <div class="partner fade-in" id="p7"><img src="assets/images/partners/neopay.png" alt=""
+                            onmouseover="this.src='assets/images/partners/neopay-c.png'"
+                            onmouseout="this.src='assets/images/partners/neopay.png'"></div>
+
+                    <div class="partner fade-in" id="p8"><img src="assets/images/partners/kmg.png" alt=""
+                            onmouseover="this.src='assets/images/partners/kmg-c.png'"
+                            onmouseout="this.src='assets/images/partners/kmg.png'"></div>
+
+                    <div class="partner fade-in" id="p9"><img src="assets/images/partners/paramount.png" alt=""
+                            onmouseover="this.src='assets/images/partners/paramount-c.png'"
+                            onmouseout="this.src='assets/images/partners/paramount.png'"></div>
+
+                    <div class="partner fade-in" id="p10"><img src="assets/images/partners/cs.png" alt=""
+                            onmouseover="this.src='assets/images/partners/cs-c.png'"
+                            onmouseout="this.src='assets/images/partners/cs.png'"></div>
+
+                    <div class="partner fade-in" id="p11"><img src="assets/images/partners/pAI.png" alt=""
+                            onmouseover="this.src='assets/images/partners/pAI-c.png'"
+                            onmouseout="this.src='assets/images/partners/pAI.png'"></div>
+
+                    <div class="partner fade-in" id="p12"><img src="assets/images/partners/integritty.png" alt=""
+                            onmouseover="this.src='assets/images/partners/integritty-c.png'"
+                            onmouseout="this.src='assets/images/partners/integritty.png'"></div>
+
+                    <div class="partner fade-in" id="p13"><img src="assets/images/partners/cofrsh.png" alt=""
+                            onmouseover="this.src='assets/images/partners/cofrsh-c.png'"
+                            onmouseout="this.src='assets/images/partners/cofrsh.png'"></div>
+
+                    <div class="partner fade-in" id="p14"><img src="assets/images/partners/ideacrest.png" alt=""
+                            onmouseover="this.src='assets/images/partners/ideacrest-c.png'"
+                            onmouseout="this.src='assets/images/partners/ideacrest.png'"></div>
+
+                    <div class="partner fade-in" id="p15"><img src="assets/images/partners/absolute.png" alt=""
+                            onmouseover="this.src='assets/images/partners/absolute-c.png'"
+                            onmouseout="this.src='assets/images/partners/absolute.png'"></div>
+
+                </div>
+            </div>
+            <div class="p-btn-container-mobile">
+                <button class="more-btn-mobile" id="more-btn-mobile" onclick="moreMobile()" id="myBtn-mobile">
+                    See more
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <!-- <div class="video-container fade-in">
+                <img src="assets/images/play.svg" alt="">
+            </div> -->
+
+        <div class="featured-container">
+            <div class="featured fade-in">
+                <h1>Featured Stories</h1>
+                <!-- <p>Take a look at what we have done</p> -->
+                <div class="slideshow-container featured-cards">
+                    <div class="mySlides fade">
+                        <!-- <div class="fc1" onclick="location.href='./work/neopay/'"> -->
+                        <div class="fc1 fc" onclick="location.href='./work/pages/vitran'">
+                            <!-- <div class="work-card-text">
+                                <div class="work-card-head">FMCG Ecosystem</div>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- <div class="fc2" onclick="location.href='./work/wareiq/'"> -->
+                        <div class="fc2 fc" onclick="location.href='./work/pages/wareiq-2'">
+                            <!-- <div class="work-card-text">
+                                <div class="work-card-head">E-Commerce Platform in India</div>
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <!-- <div class="fc3" onclick="location.href='./work/f2p/'"> -->
+                        <div class="fc3 fc">
+                            <!-- <div class="work-card-text">
+                                <div class="work-card-head">Driving business excellence</div>\
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="fc4 fc">
+                            <!-- <div class="work-card-text">
+                                <div class="work-card-head">Personalised Food Experience</div>\
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-btns">
+                    <button onclick="plusSlides(-1)"><img src="assets/images/arrow-left.svg" alt=""></button>
+                    <div class="dots-container">
+                        <div class="f-dot f-dot-active" onclick="currentSlide(1)"></div>
+                        <div class="f-dot" onclick="currentSlide(2)"></div>
+                    </div>
+                    <button onclick="plusSlides(1)"><img src="assets/images/arrow-right.svg" alt=""></button>
+                </div>
+                <a href="./work/" style="text-decoration: none;">
+                    <div class="exp-btn f-view">View all</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="featured-container-mobile" id="featured-container-mobile">
+            <div class="featured-mobile fade-in">
+                <h1>Featured Stories</h1>
+                <p>Take a look at what we have done</p>
+                <div class="featured-cards-mobile">
+                    <div class="mySlides-mobile fade">
+                        <!-- <div class="fc1" onclick="location.href='./work/neopay/'"> -->
+                        <div class="fc1-mobile fc-mobile">
+                            <div class="work-card-text">
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                                <div class="work-card-head">FMCG Ecosystem</div>
+                                <!-- <a href="./work/neopay/" style="text-decoration: none;">
+                                    <div class="view-story">view story</div></a> -->
+
+                            </div>
+                        </div>
+                        <!-- <div class="fc2" onclick="location.href='./work/wareiq/'"> -->
+                        <div class="fc2-mobile fc-mobile">
+                            <div class="work-card-text">
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                                <div class="work-card-head">E-Commerce Platform in India</div>
+                                <!-- <a href="./work/wareiq/" style="text-decoration: none;"><div class="view-story">view story</div></a> -->
+
+                            </div>
+                        </div>
+                        <!-- <div class="fc3" onclick="location.href='./work/f2p/'"> -->
+                        <div class="fc3-mobile fc-mobile">
+                            <div class="work-card-text">
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                                <div class="work-card-head">Driving business excellence</div>
+                                <!-- <a href="./work/f2p/" style="text-decoration: none;"><div class="view-story">view story</div></a> -->
+
+                            </div>
+                        </div>
+
+                        <div class="fc4-mobile fc-mobile">
+                            <div class="work-card-text">
+                                <div class="tooltip">
+                                    <span class="tooltiptext">Story under NDA</span>
+                                </div>
+                                <div class="work-card-head">Personalised Food Experience</div>
+                                <!-- <a href="./work/f2p/" style="text-decoration: none;"><div class="view-story">view story</div></a> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./work/" style="text-decoration: none;">
+                    <div class="exp-btn f-view">View all</div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="services-outer">
+            <!-- <div class="services-bg">
+                <img src="assets/images/services-bg.svg" alt="">
+            </div> -->
+            <div class="services-container fade-in">
+                <h1>How can we help you?</h1>
+                <p>We combine research & design to connect business goals to users’ needs</p>
+                <div class="services-content fade-in">
+                    <!-- <div class="services-bar">
+                        <img id="sc-b" src="assets/images/services-bar-1.svg" alt="">
+                    </div> -->
+                    <div class="services-list " id="services-list">
+                        <ul>
+                            <li class="services services-active" onclick='document.getElementById("sc-active").src="assets/images/ux.gif";
+                             document.getElementById("sc-p-active").innerHTML= "We design positive experiences that connect business goals to users’ needs. Having a great product experience is essential to retain customers, promote brand loyalty and attract new ones.";
+                             document.getElementById("sc-btn").style="display: block";
+                             document.getElementById("sc-btn").href="services";
+                             document.getElementById("sc-h").innerHTML="User Experience"'>
+                                <div class="services-radio-btn"></div>
+                                <div class="services-section">User Experience</div>
+                            </li>
+
+                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/ur.gif";
+                            document.getElementById("sc-p-active").innerHTML= "User research focuses on understanding user behaviours, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.";
+                            document.getElementById("sc-btn").style="display: block";
+                             document.getElementById("sc-btn").href="services/user-research";
+                             document.getElementById("sc-h").innerHTML="User Research & Strategy"'
+                                style="padding-top: 4px;">
+                                <div class="services-radio-btn"></div>
+                                <div class="services-section">User Research & Strategy</div>
+                            </li>
+
+                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/pre.gif";
+                            document.getElementById("sc-p-active").innerHTML= "Our team can craft an array of ideas, stories, words and images into a set of slides to tell your story!";
+                            document.getElementById("sc-btn").style="display: block";
+                             document.getElementById("sc-btn").href="services/presentation";
+                             document.getElementById("sc-h").innerHTML="Presentation Design"'>
+                                <div class="services-radio-btn"></div>
+                                <div class="services-section">Presentation Design</div>
+                            </li>
+
+                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/vnb.gif";
+                            document.getElementById("sc-p-active").innerHTML= "When we talk about branding and logo design, we refer to the key brand elements such as the logo, colour scheme, typography and other design elements.";
+                            document.getElementById("sc-btn").style="display: block";
+                             document.getElementById("sc-btn").href="services/branding";
+                             document.getElementById("sc-h").innerHTML="Visual and Branding"'
+                                style="margin-top: -6px;">
+                                <div class="services-radio-btn"></div>
+                                <div class="services-section">Visual and Branding</div>
+                            </li>
+
+                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/dev.gif";
+                            document.getElementById("sc-p-active").innerHTML= "Development services are aimed at designing, deploying and supporting. We plan tailored solutions for you to achieve operational excellence and deliver them fast and error-free.";
+                             document.getElementById("sc-btn").style="display: none";
+                             document.getElementById("sc-h").innerHTML="Development"'>
+                                <div class="services-radio-btn"></div>
+                                <div class="services-section">Development</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services-card fade-in">
+                        <div class="services-img" style=" margin-bottom: 35px;">
+                            <img id="sc-active" class="sc sc-active fade-in" src="assets/images/ux.gif"
+                                style="width: 450px" alt="">
+                        </div>
+                        <h1 id="sc-h">User Experience</h1>
+                        <p class="sc-p sc-p-active" id="sc-p-active">We design positive experiences that connect
+                            business goals to users’ needs. Having a great product experience is essential to retain
+                            customers, promote brand loyalty and attract new ones.</p>
+
+                        <a id="sc-btn" href="services"><button class="sc-btn">Know More</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-container-mobile fade-in">
+            <h1>How can we help you?</h1>
+            <p>We combine research & design to connect business goals to users’ needs</p>
+            <div class="services-mobile-carousel">
+                <div class="services-card fade-in">
+                    <div class="services-img">
+                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/ux.gif" alt="">
+                    </div>
+                    <h1 id="sc-h-mobile">User Experience</h1>
+                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">We design positive experiences that connect
+                        business goals to users’ needs. Having a great product experience is essential to retain
+                        customers, promote brand loyalty and attract new ones.</p>
+
+                    <a id="sc-btn-mobile" href="services"><button class="sc-btn sc-btn-active exp-btn">Know
+                            More</button></a>
+                </div>
+
+                <div class="services-card fade-in">
+                    <div class="services-img">
+                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/ur.gif" alt="">
+                    </div>
+                    <h1 id="sc-h-mobile">User Research & Strategy</h1>
+                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">User research focuses on understanding user
+                        behaviours, needs, and motivations through observation techniques, task analysis, and other
+                        feedback methodologies.</p>
+
+                    <a id="sc-btn-mobile" href="services/user-research/"><button
+                            class="sc-btn sc-btn-active exp-btn">Know More</button></a>
+                </div>
+
+                <div class="services-card fade-in">
+                    <div class="services-img">
+                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/pre.gif" alt="">
+                    </div>
+                    <h1 id="sc-h-mobile">Presentation Design</h1>
+                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">Our team can craft an array of ideas, stories,
+                        words and images into a set of slides to tell your story!</p>
+
+                    <a id="sc-btn-mobile" href="services/presentation/"><button
+                            class="sc-btn sc-btn-active exp-btn">Know More</button></a>
+                </div>
+
+                <div class="services-card fade-in">
+                    <div class="services-img">
+                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/vnb.gif" alt="">
+                    </div>
+                    <h1 id="sc-h-mobile">Visual and Branding</h1>
+                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">When we talk about branding and logo design, we
+                        refer to the key brand elements such as the logo, colour scheme, typography and other design
+                        elements.</p>
+
+                    <a id="sc-btn-mobile" href="services/branding/"><button class="sc-btn sc-btn-active exp-btn">Know
+                            More</button></a>
+                </div>
+
+                <div class="services-card fade-in">
+                    <div class="services-img">
+                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/dev.gif" alt="">
+                    </div>
+                    <h1 id="sc-h-mobile">Development</h1>
+                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">Development services are aimed at designing,
+                        deploying and supporting. We plan tailored solutions for you to achieve operational excellence
+                        and deliver them fast and error-free.</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <img id="dt-water-right" src="assets/images/dt-r-w.svg" alt=""> -->
+
+        <div class="info-container fade-in">
+            <div class="info">
+                <img src="assets/images/About-left.svg" alt="">
+                <div class="info-mobile">
+                    <img src="assets/images/About-right.svg" alt="">
+                </div>
+            </div>
+
+            <div class="i-cont fade-in">
+                <div class="info-content">
+                    <div class="info-content-head">About Us</div>
+                    <div class="info-content-text">
+                        We are passionate group of designers, technologists, strategists, and creative problem solvers
+                        seeking to make a positive impact on your business and the world around us.
+                    </div>
+                    <div class="info-btn-front">
+                        <a href="about/" style="text-decoration: none;"><button class="exp-btn info-btn">
+                                Know More
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-container fade-in">
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <div class="exp1">
+                        <div class="exp1-img">
+                            <img src="./assets/images/MicrosoftTeams-image (10) 1.png" alt="">
+                        </div>
+                        <div class="exp1-text">
+                            <div class="exp1-head">User Experience</div>
+                            <div class="exp1-sub">We combine Human Elements and Informational Elements to give you the
+                                desired outcomes with keeping the User as a priority.</div>
+                            <a id="exp1-btn" class="exp-btn-services" href="./services/"
+                                style="text-decoration: none;"><button class="exp-btn-main">
+                                    Explore More
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides2">
+                    <div class="exp1">
+                        <div class="exp1-img">
+                            <img src="./assets/images/info-2.png" alt="">
+                        </div>
+                        <div class="exp1-text">
+                            <div class="exp1-head">UX Strategy</div>
+                            <div class="exp1-sub">A detailed plan to align your brand’s identity with the desired user
+                                experience at every customer touchpoint to create the most efficient experience for your
+                                user.</div>
+                            <a id="exp1-btn" class="exp-btn-services" href="./services/user-research/"
+                                style="text-decoration: none;"><button class="exp-btn-main">
+                                    Explore More
+                                </button></a>
+                        </div>
+                    </div>
+                    <!-- <div class="exp2">
+                            <div class="exp2-text">
+                                <div class="exp1-head">UX Strategy</div>
+                            <div class="exp1-sub">A detailed plan to align your brand’s identity with the desired user experience at every customer touchpoint to create the most efficient experience for your user.</div>
+                            <a id="exp1-btn" class="exp-btn-services" href="./services/user-research/" style="text-decoration: none;"><button class="exp-btn-main">
+                            Explore More
+                            </button></a>
+                            </div>
+                        </div> -->
+                </div>
+
+                <div class="mySlides2">
+                    <div class="exp1">
+                        <div class="exp1-img">
+                            <img src="./assets/images/info-3.png" alt="">
+                        </div>
+                        <div class="exp1-text">
+                            <div class="exp1-head">Presentation Design</div>
+                            <div class="exp1-sub">Presentation design helps you to connect with your audience.
+                                We carefully create stories, choose style, organise design and enroot it to visual
+                                simplicity for easy understanding.</div>
+                            <a id="exp1-btn" class="exp-btn-services" href="./services/presentation/"
+                                style="text-decoration: none;"><button class="exp-btn-main">
+                                    Explore More
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="featured-btns">
+                <button onclick="plusSlidesTwo(-1)"><img src="assets/images/arrow-left.svg" alt=""></button>
+                <div class="dots2-container">
+                    <div class="f-dot2 f-dot2-active" onclick="currentSlideTwo(1)"></div>
+                    <div class="f-dot2" onclick="currentSlideTwo(2)"></div>
+                    <div class="f-dot2" onclick="currentSlideTwo(3)"></div>
+                </div>
+                <button onclick="plusSlidesTwo(1)"><img src="assets/images/arrow-right.svg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="section-discover">
+            <div class="section-discover-content">
+                <img src="./assets/images/Group 8473.svg" alt="">
+            </div>
+        </div>
+
+        <div class="section-industries">
+            <div class="content">
+                <div class="head">Industries we have worked for</div>
+                <div class="subhead">The knowledge gained from projects across industries helps us take up new
+                    challenges.
+                </div>
+                <div class="image">
+                    <img src="./assets/images/ind-icons-1.svg" alt="">
+                </div>
+                <button>
+                    <img src="./assets/images/see-more.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="content-w">
+            <div class="testimonials-container fade-in">
+                <h1 class="test-text">What our clients are saying</h1>
+                <div class="test-content">
+                    <div class="test-card fade-in">
+                        <div class="test-card-h">Highly Recommended</div>
+                        <div class="test-card-b">We worked with the team to get complete revamp of our Mobile App. They
+                            are thorough professionals and understand the consumer mobile space in & out. With very few
+                            briefings, team understood the requirements and delivered us the improvised version of the
+                            flow in record time.</div>
+                        <div class="test-card-id">Ruchika Sharma</div>
+                        <div class="test-card-id-sub">Co-Founder, CoFrsh</div>
+                    </div>
+                    <div class="test-card fade-in">
+                        <div class="test-card-h">Empathetic & Sincere</div>
+                        <div class="test-card-b">What I love about working with Deepak is his innate ability to simplify
+                            complex problem statements. He understands what you are trying to communicate to your
+                            consumer very well. His design and solutions will bring a smile on you face (you are like-
+                            this is so clear and fascinating way to communicate; why didn't it strike us!).</div>
+                        <div class="test-card-id">Agam Khare</div>
+                        <div class="test-card-id-sub">Absolute Foods</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer fade-in">
+            <div class="sub-footer-content">
+                <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
+                <a href="contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in
+                        Touch</button></a>
+            </div>
+        </div>
+        <div class="footer-true">
+            <div class="company-foot">
+                <div class="company-details">
+                    <div class="address">
+                        <img class="ad-logo" src="./assets/images/Group 134.svg" alt="">
+                        <img class="footer-vl" src="./services/images/Rectangle 98.png" alt="" style="height: 102px;">
+                        <p><span style="font-weight:bold;">UXUI Studio Private Limited</span><br> B 214, The Suvidha
+                            CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011</p>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-links">
+                            <a href="services/" style="text-decoration: none;">Services</a>
+                            <a href="about/" style="text-decoration: none;">About</a>
+                            <a href="work/" style="text-decoration: none;">Work</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="contact/" target="_blank"><img src="assets/images/mail.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                                    src="assets/images/linkedin.svg" alt=""></a>
+                            <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                                    src="assets/images/ig.svg" alt=""></a>
+                            <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                                    src="assets/images/fb.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-mobile">
+            <div class="footer-mobile-content">
+                <div class="footer-mobile-top">
+                    <div class="footer-mobile-top-img">
+                        <img src="assets/images/mobile-nav-logo.png" style="width: 106px;" alt="">
+                    </div>
+                    <div class="footer-mobile-vl"></div>
+                    <div class="footer-mobile-address">
+                        <span style="font-weight: 600;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS,
+                        <br> GH 10, Gurugram,<br> Haryana, 122011
+                    </div>
+                </div>
+                <div class="footer-mobile-bottom">
+                    <div class="mobile-contact-links">
+                        <a href="services/">Services</a>
+                        <a href="about/">About</a>
+                        <a href="work/">Work</a>
+                    </div>
+                    <div class="mobile-social-links">
+                        <a href="contact/" target="_blank"><img src="assets/images/mail-large.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                                src="assets/images/linkedin.svg" alt=""></a>
+                        <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                                src="assets/images/ig.svg" alt=""></a>
+                        <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                                src="assets/images/fb.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var header = document.getElementById("services-list");
+            var list = header.getElementsByClassName("services");
+            for (var i = 0; i < list.length; i++) {
+                list[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("services-active");
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace("services-active", "");
+                    }
+                    this.className += " services-active";
+                });
+            }
+
+            var header2 = document.getElementById("services-btn-container-mobile");
+            var list2 = header2.getElementsByClassName("services-btn");
+            for (var i = 0; i < list2.length; i++) {
+                list2[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("services-btn-active");
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace("services-btn-active", "");
+                    }
+                    this.className += " services-btn-active";
+                });
+            }
+        </script>
+
+
+        <script>
+            function more() {
+                var more = document.getElementById("more");
+                var btnText = document.getElementById("more-btn");
+                if (more.style.display === "none") {
+                    more.style.display = "block";
+                    btnText.innerHTML = 'See less <i class="fa fa-angle-up" aria-hidden="true"></i>';
+                    btnText.style.margin = "13.888vw auto 0 auto";
+                }
+                else {
+                    more.style.display = "none";
+                    btnText.innerHTML = 'See more <i class="fa fa-angle-down" aria-hidden="true"></i>';
+                    btnText.style.margin = "50px auto";
+                }
+            }
+
+            function moreMobile() {
+                var more = document.getElementById("more-mobile");
+                var btnText = document.getElementById("more-btn-mobile");
+                if (more.style.display === "none") {
+                    more.style.display = "block";
+                    btnText.innerHTML = 'See less <i class="fa fa-angle-up" aria-hidden="true"></i>';
+                    btnText.style.margin = "30px auto";
+                }
+                else {
+                    more.style.display = "none";
+                    btnText.innerHTML = 'See more <i class="fa fa-angle-down" aria-hidden="true"></i>';
+                    btnText.style.margin = "30px auto";
+                }
+            }
+        </script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

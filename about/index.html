@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footer-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../assets/images/icons/Asset 13.svg">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us - Design Tribe</title>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="header-container" id="header-container">
+            <div class="header">
+                <a href="../"><img class="logo" src="../assets/images/dt-logo.svg" alt=""></a>
+
+                <div class="topnav" id="myTopnav">
+                    <a class="nav-link"></a>
+                    <a class="nav-link" href="../">Home</a>
+                    <a class="nav-link active" href="">About Us</a>
+                    <a class="nav-link" href="../work/">Work</a>
+                    <a class="nav-link " href="../services/">Services</a>
+                    <a class="nav-link" href="../contact/"><button id="nav-btn">Get in Touch</button></a>
+                </div>
+                <div class="topnav-mobile">
+                    <button class="icon" onclick="myFunction()">
+                        <img id="icon" src="../assets/images/stroke.png" style="width: 22px;" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="topnav-menu" id="topnav-menu">
+                <div class="topnav-menu-links">
+                    <a class="nav-link" href="../">Home</a>
+                    <a class="nav-link active" href="">About Us</a>
+                    <a class="nav-link" href="../work/">Work</a>
+                    <a class="nav-link " href="../services/">Services</a>
+                    <a class="nav-link" href="../contact/"><button id="nav-btn">Get in Touch</button></a>
+                </div>
+                <div class="topnav-img">
+                    <img src="../assets/images/mobile-nav-logo.png" style="width: 106px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var menu = document.getElementById("topnav-menu");
+            var icon = document.getElementById("icon");
+            var head = document.getElementById("header-container");
+            if (menu.className == "topnav-menu") {
+                head.style.background = "#006A4E";
+                menu.className = "topnav-menu-active";
+                icon.src = "../assets/images/cancel.png";
+            }
+            else {
+                head.style.background = "white";
+                menu.className = "topnav-menu";
+                icon.src = "../assets/images/stroke.png"
+            }
+        }
+    </script>
+
+    <div class="content-w">
+        <div class="hero-container">
+            <div class="hero">
+                <!-- <div class="hero-text">
+                        <p id="h-top">Hey, We’re the</p>
+                        <img src="assets/images/dt-text.svg" alt="">
+                        <p id="h-bottom">We are passionate group of technologists, strategists, and creative problem solvers seeking to make a positive impact on your business and the world around us.</p>
+                        
+                    </div>
+                    <div class="hero-path">
+                        <img id="h-img" src="assets/images/Frame.svg" alt="">
+                    </div> -->
+                <div class="hero-img">
+                    <img src="assets/images/hey-img.png" alt="">
+                </div>
+
+                <div class="hero-mobile">
+                    <img src="assets/images/about-mobile.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="design-story">
+        <div class="ds-content">
+            <img src="./assets/images/design-story.svg" alt="">
+        </div>
+
+    </div>
+    <div class="content-w">
+        <div class="hero-container">
+            <div class="meet">
+                <div class="meet-text">
+                    Meet the
+                    <img src="assets/images/tribe.svg" alt="">
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/images/Deepak.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/Mani.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/Adnan.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/Rajnish.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/Priya.svg" alt="">
+                    </div>
+                    <!-- <div class="grid-item">
+                            <img src="assets/images/Harshita.png" alt="">
+                        </div> -->
+                    <div class="grid-item">
+                        <img src="assets/images/Nawang.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <!-- <img src="assets/images/kanika.png" alt=""> -->
+                    </div>
+                    <div class="grid-item">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="approach">
+            <div class="approach-container">
+                Our Approach to Design: To combine <mark>research, design, and marketing</mark> towards creating positive <mark> user experiences</mark> and <mark>grow businesses</mark>.
+                <div class="approach-sub">A great product should first and foremost understand it’s users. Recognising their needs, wants and apprehensions is key in building a sustainable and intuitive experience. Once that is done, it’s time to put the proverbial pen to the paper and come up with great looking interfaces that are highly functional. Now it’s time to launch and market your product, so as to gain new customers and grow your business. </div>
+                <a href="../services/" style="text-decoration: none;"> <button class="exp-btn">Know more</button></a>
+             </div>
+        </div> -->
+
+    <!-- <div class="post-approach">
+            <img src="assets/images/Group 153 (1).png" style="width: 100vw;" alt="">
+        </div> -->
+    <!-- <div class="ideate">
+            <div class="ideate-container">
+                We Ideate, Create & Collaborate – All together 
+                <div class="ideate-sub">Working at Design Tribe is a creativity-powered and engaging experience that enables our team to evolve and succeed in today’s design and technology-centric world. Each member takes ownerships of projects and as a team, we discuss and provide feedback on each iteration for the best possible outcome. Work-life balance is also the core of our belief system, owing to which our team-members experience an entrepreneurial, mentally stimulating yet relaxed learning environment that sharpens their creative thinking, decision-making capabilities, and fosters innovation. </div>
+                <img src="assets/images/ideate.png" alt="">
+            </div>
+        </div> -->
+    <div class="sub-footer">
+        <div class="sub-footer-content">
+            <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
+            <a href="contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in Touch</button></a>
+        </div>
+    </div>
+
+    <div class="footer-true">
+        <div class="company-foot">
+            <div class="company-details">
+                <div class="address">
+                    <img class="ad-logo" src="../services/images/Group 134.png" alt="">
+                    <img class="footer-vl" src="../services/images/Rectangle 98.png" alt="" style="height: 102px;">
+                    <p><span style="font-weight:bold;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS,
+                        <br> GH 10, Gurugram,<br> Haryana, 122011</p>
+                </div>
+                <div class="contact">
+                    <div class="contact-links">
+                        <a href="../services/uxui/" style="text-decoration: none;">Services</a>
+                        <a href="../about/" style="text-decoration: none;">About</a>
+                        <a href="../work/" style="text-decoration: none;">Work</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="contact/" target="_blank"><img src="../assets/images/mail.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                                src="../assets/images/linkedin.svg" alt=""></a>
+                        <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                                src="../assets/images/ig.svg" alt=""></a>
+                        <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                                src="../assets/images/fb.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-mobile">
+        <div class="footer-mobile-content">
+            <div class="footer-mobile-top">
+                <div class="footer-mobile-top-img">
+                    <img src="../assets/images/mobile-nav-logo.png" style="width: 106px;" alt="">
+                </div>
+                <div class="footer-mobile-vl"></div>
+                <div class="footer-mobile-address">
+                    <span style="font-weight: 600;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS, <br>
+                    GH 10, Gurugram,<br> Haryana, 122011
+                </div>
+            </div>
+            <div class="footer-mobile-bottom">
+                <div class="mobile-contact-links">
+                    <a href="../services/">Services</a>
+                    <a href="../about/">About</a>
+                    <a href="../work/">Work</a>
+                </div>
+                <div class="mobile-social-links">
+                    <a href="../contact/" target="_blank"><img src="../assets/images/mail-large.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                            src="../assets/images/linkedin.svg" alt=""></a>
+                    <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                            src="../assets/images/ig.svg" alt=""></a>
+                    <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                            src="../assets/images/fb.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

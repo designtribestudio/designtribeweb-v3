@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../../../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../../../assets/images/icons/Asset 13.svg">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=100vw, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Design Tribe - WareIQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="heroscript.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70RE4EZWV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-70RE4EZWV9');
+    </script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <div class="content-wrapper" id="content-wrapper">
+            <div class="header-container">
+                <div class="header">
+                    <a href="./"><img class="logo" src="../../../../../assets/images/dt-logo.svg" alt=""></a>
+
+                    <div class="topnav" id="myTopnav">
+                        <!-- ******* Change link paths ******* -->
+                        <a class="nav-link"></a>
+                        <a class="nav-link" href="./">Home</a>
+                        <a class="nav-link" href="./about/">About Us</a>
+                        <a class="nav-link active" href="./work/">Work</a>
+                        <a class="nav-link " href="./services/">Services</a>
+                        <a class="nav-link" href="./contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-mobile">
+                        <button class="icon" onclick="myFunction()">
+                            <img id="icon" src="assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="topnav-menu" id="topnav-menu">
+                    <div class="topnav-menu-links">
+                        <a class="nav-link" href="./">Home</a>
+                        <a class="nav-link" href="./about/">About Us</a>
+                        <a class="nav-link active" href="./work/">Work</a>
+                        <a class="nav-link " href="./services/">Services</a>
+                        <a class="nav-link" href="./contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div>
+                    <div class="topnav-img">
+                        <img src="../../../assets/images/mobile-nav-logo.png" style="width: 106px" alt="">
+                    </div>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    var menu = document.getElementById("topnav-menu");
+                    var icon = document.getElementById("icon");
+                    var head = document.getElementById("content-wrapper");
+                    if (menu.className == "topnav-menu") {
+                        menu.className = "topnav-menu-active";
+                        icon.src = "assets/images/cancel.png";
+                        head.style.background = "#006A4E";
+                    }
+                    else {
+                        menu.className = "topnav-menu";
+                        icon.src = "assets/images/stroke.png"
+                        head.style.background = "white";
+                    }
+                }
+            </script>
+        </div>
+        <div class="wareiq-hero-container">
+            <div class="wareiq-hero">
+                <img src="./wareiq-hero.svg" alt="">
+            </div>
+        </div>
+        <div class="wareiq-info-container">
+            <div class="wareiq-info">
+                <img src="./wareiq-map.svg" alt="">
+            </div>
+        </div>
+        <div class="wareiq-info-banner-container">
+            <div class="wareiq-info-banner">
+                <img src="./wareiq-process.svg" alt="">
+            </div>
+        </div>
+
+        <div class="wareiq-roles-container">
+            <div class="wareiq-roles">
+                <img src="./wareiq-role.svg" alt="">
+                <img src="./ware-branding.svg" alt="">
+            </div>
+        </div>
+        <div class="wareiq-platform-container">
+            <div class="wareiq-platform-img">
+                <img src="./wareiq-platform.png" alt="">
+                <img src="./wareiq-flow.png" alt="">
+                <!-- <img src="./wareiq-wireframe.svg" alt=""> -->
+            </div>
+        </div>
+
+        <div class="wareiq-platform-container" style="height: 702px;
+        background: #032534; margin-bottom: 300px;">
+            <div class="wareiq-platform-img" style="position: relative; top: -88px;">
+                <img src="./wareiq-wireframe.svg" alt="">
+            </div>
+        </div>
+
+        
+
+        <!-- <div class="vitran-user-flow-container">
+            <div class="vitran-user-flow">
+                <img src="./Group 12385.svg" alt="">
+            </div>
+        </div> -->
+
+        <div class="style-guide-container">
+            <div class="style-guide">
+                <img src="./wareiq-style.svg" alt="">
+                <img src="./wareiq-type.svg" alt="">
+                <img src="./wareiq-iconography.svg" alt="">
+                <img src="./wareiq-ui.svg" alt="">
+            </div>
+        </div>
+
+        <div class="wareiq-dist-container">
+            <div class="wareiq-dist">
+                <div class="wareiq-dist-items"><img src="./wareiq-ui-1.png" alt=""></div>
+                <div class="wareiq-dist-items"><img src="./wareiq-ui-2.svg" alt=""></div>
+                <div class="wareiq-dist-items"><img src="./wareiq-last.svg" alt=""></div>
+                <!-- <div class="wareiq-dist-items"><img src="./titan.svg" alt=""></div> -->
+            </div>
+        </div>
+    </div>
+</body>
