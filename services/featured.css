@@ -1,5 +1,6 @@
 :root{
-    --width: 79.17vw;
+    /* --width: 79.17vw; */
+    --width: 1140px;
 }
 .body-wrap{
     overflow: hidden;

@@ -8,7 +8,8 @@ body{
     margin: 0 auto;
 }
 :root{
-    --width: 79.17vw;
+    /* --width: 79.17vw; */
+    --width: 1140px;
 }
 .content-wrapper{
     width: 100vw;
