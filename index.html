@@ -600,10 +600,10 @@
                             <img src="./assets/images/user-research-img.png" alt="">
                         </div>
                         <div class="exp1-text">
-                            <div class="exp1-head">User Experience</div>
+                            <div class="exp1-head" style="color: #006A4E;">User Research</div>
                             <div class="exp1-sub">We combine Human Elements and Informational Elements to give you the
                                 desired outcomes with keeping the User as a priority.</div>
-                            <a id="exp1-btn" class="exp-btn-services" href="./services/"
+                            <a class="exp1-btn-1" class="exp-btn-services" href="./services/"
                                 style="text-decoration: none;"><button class="exp-btn-main">
                                     Explore More
                                 </button></a>
@@ -612,43 +612,35 @@
                 </div>
 
                 <div class="mySlides2">
-                    <div class="exp1">
-                        <div class="exp1-img">
-                            <img src="./assets/images/ux-img.png" alt="">
+                    <div class="exp1" style="background-color: #FFF4E3;">
+                        <div class="exp1-img" style="background: linear-gradient(123.76deg, #72132C 5.09%, #BF345E 37.38%, #72132C 82.03%);
+                        backdrop-filter: blur(22.8101px);">
+                            <img src="./assets/images/ux-img.png" alt="" style="width: 562px; height: 419.2px; position: relative; top: 85px; left: 85px;">
                         </div>
                         <div class="exp1-text">
-                            <div class="exp1-head">UX Strategy</div>
+                            <div class="exp1-head" style="color: #E16900;">UX Strategy</div>
                             <div class="exp1-sub">A detailed plan to align your brand’s identity with the desired user
                                 experience at every customer touchpoint to create the most efficient experience for your
                                 user.</div>
-                            <a id="exp1-btn" class="exp-btn-services" href="./services/user-research/"
+                            <a class="exp1-btn" class="exp-btn-services" href="./services/user-research/"
                                 style="text-decoration: none;"><button class="exp-btn-main">
                                     Explore More
                                 </button></a>
                         </div>
                     </div>
-                    <!-- <div class="exp2">
-                            <div class="exp2-text">
-                                <div class="exp1-head">UX Strategy</div>
-                            <div class="exp1-sub">A detailed plan to align your brand’s identity with the desired user experience at every customer touchpoint to create the most efficient experience for your user.</div>
-                            <a id="exp1-btn" class="exp-btn-services" href="./services/user-research/" style="text-decoration: none;"><button class="exp-btn-main">
-                            Explore More
-                            </button></a>
-                            </div>
-                        </div> -->
                 </div>
 
                 <div class="mySlides2">
-                    <div class="exp1">
-                        <div class="exp1-img">
+                    <div class="exp1" style="background-color: #F5FEFF;">
+                        <div class="exp1-img" style="background-color: #95B6BA;">
                             <img src="./assets/images/pd-img.png" alt="">
                         </div>
                         <div class="exp1-text">
-                            <div class="exp1-head">Presentation Design</div>
+                            <div class="exp1-head" style="color: #006A4E;">Presentation Design</div>
                             <div class="exp1-sub">Presentation design helps you to connect with your audience.
                                 We carefully create stories, choose style, organise design and enroot it to visual
                                 simplicity for easy understanding.</div>
-                            <a id="exp1-btn" class="exp-btn-services" href="./services/presentation/"
+                            <a class="exp1-btn-1" class="exp-btn-services" href="./services/presentation/"
                                 style="text-decoration: none;"><button class="exp-btn-main">
                                     Explore More
                                 </button></a>
@@ -733,7 +725,7 @@
                 <div class="subhead">The knowledge gained from projects across industries helps us take up new
                     challenges.
                 </div>
-                <div class="icon-grid">
+                <div class="icon-grid" id="icon-grid">
                     <div class="icon-item">
                         <img src="./assets/images/ind-1.svg" alt="">
                         <div class="icon-text">Banking</div>
@@ -799,7 +791,7 @@
                         <div class="icon-text">Health & Fitness</div>
                     </div>
                 </div>
-                <button>
+                <button onclick="toggleIconGrid()" style="cursor: pointer; padding: 10px;">
                     <img src="./assets/images/see-more.svg" alt="">
                 </button>
             </div>
@@ -979,7 +971,7 @@
                 if (more.style.display === "none") {
                     more.style.display = "block";
                     btnText.innerHTML = 'See less <i class="fa fa-angle-up" aria-hidden="true"></i>';
-                    btnText.style.margin = "13.888vw auto 0 auto";
+                    btnText.style.margin = "50px auto 0 auto";
                 }
                 else {
                     more.style.display = "none";
@@ -1000,6 +992,16 @@
                     more.style.display = "none";
                     btnText.innerHTML = 'See more <i class="fa fa-angle-down" aria-hidden="true"></i>';
                     btnText.style.margin = "30px auto";
+                }
+            }
+
+            function toggleIconGrid(){
+                var icongrid = document.getElementById("icon-grid");
+                if (icongrid.style.height === "350px"){
+                    icongrid.style.height = "700px";
+                }
+                else{
+                    icongrid.style.height = "350px";
                 }
             }
         </script>

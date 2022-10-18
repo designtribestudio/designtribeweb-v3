@@ -619,7 +619,7 @@ color: #E08433;
 }
 
 .partners-container {
-    margin: 150px 0 0 0;
+    margin: 50px 0 0 0;
     width: 100vw;
 }
 
@@ -639,7 +639,7 @@ color: #E08433;
 
 .more {
     margin: 0 auto 0 auto;
-    width: 100vw;
+    width: 1440px !important;
     /* min-width: 1440px; */
     display: none;
 }
@@ -654,7 +654,7 @@ color: #E08433;
     width: 1140px;
     /* min-width: 1200px; */
     margin: 0 auto;
-    padding-left: 50px;
+    padding-left: 75px;
 }
 
 .p-btn-container {
@@ -710,7 +710,7 @@ color: #E08433;
 .mySlides2 {
     display: block;
     /* min-width: 1440px; */
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
 }
 
@@ -884,11 +884,16 @@ color: #E08433;
 .featured-btns {
     /* min-width: 1140px; */
     width: var(--width);
-    width: 1140px;
+    width: 500px;
+    position: relative;
+    float: right;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 70px auto 40px auto;
+    margin: 0 auto 40px auto;
+    z-index: 2;
+    top: -70px;
+    right: 125px;
 }
 
 .featured-btns button {
@@ -1052,14 +1057,15 @@ color: #E08433;
     /* min-height: 524px; */
     display: flex;
     align-items: center;
-    background: rgba(148, 143, 143, 0.1);
+    background: #EDF5EC;
     backdrop-filter: blur(35px);
 }
 
 .exp1-img {
     /* min-width: 720px; */
     width: 50%;
-    padding-top: 5px;
+    height: 100%;
+    margin: 0;
 }
 
 .exp1-img>img {
@@ -1085,10 +1091,10 @@ color: #E08433;
     height: 524px;
 } */
 .exp1-text {
-    width: 50%;
+    width: 502px;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 100px;
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;  */
 }
@@ -1184,6 +1190,7 @@ color: #E08433;
 
 }
 
+
 .exp-btn-main {
     width: 117px;
     height: 45px;
@@ -1206,6 +1213,12 @@ color: #E08433;
     z-index: 1; */
 }
 
+.exp1-btn-1 .exp-btn-main{
+    border: 1px solid #006A4E;
+    color: #006A4E;
+    box-shadow: inset 0 0 0 0 #006A4E;
+}
+
 .exp-btn-main:hover {
     /* background-color: #E14B2C; */
     border: 1px solid #E14B2C;
@@ -1213,10 +1226,11 @@ color: #E08433;
     color: white;
 }
 
-#exp-btn {
-    text-decoration: none;
+.exp1-btn-1 .exp-btn-main:hover{
+    border: 1px solid #006A4E;
+    box-shadow: inset 117px 0 0 0 #006A4E;
+    color: white;
 }
-
 .exp-dots {
     width: 100vw;
 }
@@ -1238,7 +1252,7 @@ color: #E08433;
 .info-container {
     width: 100vw;
     height: fit-content;
-    margin: 400px 0;
+    margin: 300px 0;
 }
 
 .info {
@@ -1742,7 +1756,8 @@ line-height: 25px;
     background: linear-gradient(90deg, #1D2926 50%, #3E5750 50%);
     width: 100vw;
     position: relative;
-    top: 150px;
+    top: -65px;
+    margin-top: 65px;
 }
 
 .section-discover-content {
@@ -1785,6 +1800,7 @@ line-height: 36px;
 .section-industries {
     padding: 186px 0 42px 0;
     background: #F3F6FA;
+    margin-top: -65px;
 }
 
 .section-industries .content {
@@ -1815,6 +1831,8 @@ line-height: 28px;
 
 .icon-grid{
     width: 1106px;
+    height: 350px;
+    overflow: hidden;
     margin: 54px auto 0 auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
