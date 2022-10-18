@@ -98,7 +98,7 @@
                     <h1 id="h-mid" class="">Let’s tell stories through <br>
                         <a href="" style="text-decoration: none; color: black;" class="typewrite" data-period="2000"
                             data-type='[ "Research", "User Experience", "UX Strategy", "Visual Design", "Branding", "Business Presentation" ]'>
-                            <span class="wrap" style="height: 72px; display: block;">
+                            <span class="wrap" style="height: 72px; display: block; font-size: 72px;">
                             </span>
                         </a>
                         <!-- <span>
@@ -117,8 +117,10 @@
                         <div class="high-short"></div>
                     </div> -->
 
-                    <p id="h-bottom">We help brands and businesses create, express and deliver value through human
+                    <p id="h-bottom">We help brands and businesses create, express and deliver <br> value through human
                         centered design.</p>
+
+                    <div class="marker"></div>
                     <a href="#more-btn-mobile" style="text-decoration: none; color: white;"><button id="m-stories">
                             See Stories
                         </button></a>
@@ -417,67 +419,71 @@
                     <!-- <div class="services-bar">
                         <img id="sc-b" src="assets/images/services-bar-1.svg" alt="">
                     </div> -->
-                    <div class="services-list " id="services-list">
-                        <ul>
-                            <li class="services services-active" onclick='document.getElementById("sc-active").src="assets/images/ux.gif";
+                    <div class="sc-content-inner">
+                        <div class="services-list " id="services-list">
+                            <ul>
+                                <li class="services services-active" onclick='document.getElementById("sc-active").src="assets/images/ux.gif";
                              document.getElementById("sc-p-active").innerHTML= "We design positive experiences that connect business goals to users’ needs. Having a great product experience is essential to retain customers, promote brand loyalty and attract new ones.";
                              document.getElementById("sc-btn").style="display: block";
                              document.getElementById("sc-btn").href="services";
                              document.getElementById("sc-h").innerHTML="User Experience"'>
-                                <div class="services-radio-btn"></div>
-                                <div class="services-section">User Experience</div>
-                            </li>
+                                    <div class="services-radio-btn"></div>
+                                    <div class="services-section">User Experience</div>
+                                </li>
 
-                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/ur.gif";
+                                <li class="services" onclick='document.getElementById("sc-active").src="assets/images/ur.gif";
                             document.getElementById("sc-p-active").innerHTML= "User research focuses on understanding user behaviours, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.";
                             document.getElementById("sc-btn").style="display: block";
                              document.getElementById("sc-btn").href="services/user-research";
                              document.getElementById("sc-h").innerHTML="User Research & Strategy"'
-                                style="padding-top: 4px;">
-                                <div class="services-radio-btn"></div>
-                                <div class="services-section">User Research & Strategy</div>
-                            </li>
+                                    style="padding-top: 4px;">
+                                    <div class="services-radio-btn"></div>
+                                    <div class="services-section">User Research & Strategy</div>
+                                </li>
 
-                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/pre.gif";
+                                <li class="services" onclick='document.getElementById("sc-active").src="assets/images/pre.gif";
                             document.getElementById("sc-p-active").innerHTML= "Our team can craft an array of ideas, stories, words and images into a set of slides to tell your story!";
                             document.getElementById("sc-btn").style="display: block";
                              document.getElementById("sc-btn").href="services/presentation";
                              document.getElementById("sc-h").innerHTML="Presentation Design"'>
-                                <div class="services-radio-btn"></div>
-                                <div class="services-section">Presentation Design</div>
-                            </li>
+                                    <div class="services-radio-btn"></div>
+                                    <div class="services-section">Presentation Design</div>
+                                </li>
 
-                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/vnb.gif";
+                                <li class="services" onclick='document.getElementById("sc-active").src="assets/images/vnb.gif";
                             document.getElementById("sc-p-active").innerHTML= "When we talk about branding and logo design, we refer to the key brand elements such as the logo, colour scheme, typography and other design elements.";
                             document.getElementById("sc-btn").style="display: block";
                              document.getElementById("sc-btn").href="services/branding";
                              document.getElementById("sc-h").innerHTML="Visual and Branding"'
-                                style="margin-top: -6px;">
-                                <div class="services-radio-btn"></div>
-                                <div class="services-section">Visual and Branding</div>
-                            </li>
+                                    style="margin-top: -6px;">
+                                    <div class="services-radio-btn"></div>
+                                    <div class="services-section">Visual and Branding</div>
+                                </li>
 
-                            <li class="services" onclick='document.getElementById("sc-active").src="assets/images/dev.gif";
+                                <li class="services" onclick='document.getElementById("sc-active").src="assets/images/dev.gif";
                             document.getElementById("sc-p-active").innerHTML= "Development services are aimed at designing, deploying and supporting. We plan tailored solutions for you to achieve operational excellence and deliver them fast and error-free.";
                              document.getElementById("sc-btn").style="display: none";
                              document.getElementById("sc-h").innerHTML="Development"'>
-                                <div class="services-radio-btn"></div>
-                                <div class="services-section">Development</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="services-card fade-in">
-                        <div class="services-img" style=" margin-bottom: 35px;">
-                            <img id="sc-active" class="sc sc-active fade-in" src="assets/images/ux.gif"
-                                style="width: 450px" alt="">
+                                    <div class="services-radio-btn"></div>
+                                    <div class="services-section">Development</div>
+                                </li>
+                            </ul>
                         </div>
-                        <h1 id="sc-h">User Experience</h1>
-                        <p class="sc-p sc-p-active" id="sc-p-active">We design positive experiences that connect
-                            business goals to users’ needs. Having a great product experience is essential to retain
-                            customers, promote brand loyalty and attract new ones.</p>
+                        <div class="services-card fade-in">
+                            <div class="services-img" style=" margin-bottom: 35px;">
+                                <img id="sc-active" style="width: 558px" class="sc sc-active fade-in"
+                                    src="assets/images/ux.gif" style="width: 450px" alt="">
+                            </div>
+                            <div class="s-card-inner">
+                                <h1 id="sc-h">User Experience</h1>
+                                <p class="sc-p sc-p-active" id="sc-p-active">We design positive experiences that connect
+                                    business goals to users’ needs. Having a great product experience is essential to
+                                    retain
+                                    customers, promote brand loyalty and attract new ones.</p>
 
-                        <a id="sc-btn" href="services"><button class="sc-btn">Know More</button></a>
-
+                                <a id="sc-btn" href="services"><button class="sc-btn">Know More</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -554,26 +560,35 @@
         <!-- <img id="dt-water-right" src="assets/images/dt-r-w.svg" alt=""> -->
 
         <div class="info-container fade-in">
-            <div class="info">
+            <!-- <div class="info">
                 <img src="assets/images/About-left.svg" alt="">
                 <div class="info-mobile">
                     <img src="assets/images/About-right.svg" alt="">
                 </div>
-            </div>
+            </div> -->
 
             <div class="i-cont fade-in">
-                <div class="info-content">
-                    <div class="info-content-head">About Us</div>
-                    <div class="info-content-text">
-                        We are passionate group of designers, technologists, strategists, and creative problem solvers
-                        seeking to make a positive impact on your business and the world around us.
-                    </div>
-                    <div class="info-btn-front">
-                        <a href="about/" style="text-decoration: none;"><button class="exp-btn info-btn">
-                                Know More
-                            </button></a>
+                <div class="i-cont-left">
+                    <div class="i-cont-left-img">
+                        <img src="assets/images/About-left.svg" alt="">
                     </div>
                 </div>
+                <div class="i-cont-right">
+                    <div class="info-content">
+                        <div class="info-content-head">About Us</div>
+                        <div class="info-content-text">
+                            We are passionate group of designers, technologists, strategists, and creative problem
+                            solvers
+                            seeking to make a positive impact on your business and the world around us.
+                        </div>
+                        <div class="info-btn-front">
+                            <a href="about/" style="text-decoration: none;"><button class="exp-btn info-btn">
+                                    Know More
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -582,7 +597,7 @@
                 <div class="mySlides2">
                     <div class="exp1">
                         <div class="exp1-img">
-                            <img src="./assets/images/MicrosoftTeams-image (10) 1.png" alt="">
+                            <img src="./assets/images/user-research-img.png" alt="">
                         </div>
                         <div class="exp1-text">
                             <div class="exp1-head">User Experience</div>
@@ -599,7 +614,7 @@
                 <div class="mySlides2">
                     <div class="exp1">
                         <div class="exp1-img">
-                            <img src="./assets/images/info-2.png" alt="">
+                            <img src="./assets/images/ux-img.png" alt="">
                         </div>
                         <div class="exp1-text">
                             <div class="exp1-head">UX Strategy</div>
@@ -626,7 +641,7 @@
                 <div class="mySlides2">
                     <div class="exp1">
                         <div class="exp1-img">
-                            <img src="./assets/images/info-3.png" alt="">
+                            <img src="./assets/images/pd-img.png" alt="">
                         </div>
                         <div class="exp1-text">
                             <div class="exp1-head">Presentation Design</div>
@@ -658,7 +673,57 @@
 
         <div class="section-discover">
             <div class="section-discover-content">
-                <img src="./assets/images/Group 8473.svg" alt="">
+                <div class="sd-card">
+                    <div class="sd-content" style="width: 250px;">
+                        <img class="sd-icon" src="./assets/images/sd-discover.svg" alt="">
+                        <div class="sd-head">Discover</div>
+                        <div class="sd-text">User studies across various demographics, cultures to gather both
+                            qualitative &
+                            quantitative understanding of the target personas.</div>
+                        <ul class="sd-list" style="margin: 16px 0 0 0;">
+                            <li> Qualitative Research </li>
+                            <li> Quantitative Studies </li>
+                            <li> Heuristic Evaluation </li>
+                            <li> Usability Testing </li>
+                            <li> Competitor Analysis </li>
+                            <li> Global Benchmarking</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sd-card" style="background-color: #253430;">
+                    <div class="sd-content" style="width: 250px;">
+                        <img class="sd-icon" src="./assets/images/sd-strategy.svg" alt="">
+                        <div class="sd-head">Strategy</div>
+                        <div class="sd-text">From brainstorming to wireframing, we Strategies everything in order to
+                            create
+                            a memorable experience.</div>
+                        <ul class="sd-list" style="margin: 44px 0 0 0;">
+                            <li> Design Thinking </li>
+                            <li> Product Strategy </li>
+                            <li> Product Roadmap </li>
+                            <li> Service Design </li>
+                            <li> Design Principles</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sd-card">
+                    <div class="sd-content" style="width: 305px;">
+                        <img class="sd-icon" src="./assets/images/sd-design.svg" alt="">
+                        <div class="sd-head">Design</div>
+                        <div class="sd-text">Top notch design experiences across voice, web, mobile, AI etc to deliver
+                            value
+                            across platforms & emerging media</div>
+                        <ul class="sd-list" style="margin: 44px 0 0 0;">
+                            <li> Interaction Design
+                            <li> Presentation and Strategy </li>
+                            <li> Interface & Visual Design </li>
+                            <li> Prototyping & Usability testing </li>
+                            <li> Front end development </li>
+                            <li> Micro interactions & motion </li>
+                            <li> Branding & Illustration </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -668,8 +733,71 @@
                 <div class="subhead">The knowledge gained from projects across industries helps us take up new
                     challenges.
                 </div>
-                <div class="image">
-                    <img src="./assets/images/ind-icons-1.svg" alt="">
+                <div class="icon-grid">
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-1.svg" alt="">
+                        <div class="icon-text">Banking</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-2.svg" alt="">
+                        <div class="icon-text">Education</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-3.svg" alt="">
+                        <div class="icon-text">Logistics</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-4.svg" alt="">
+                        <div class="icon-text">Shipping & Mailing</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-5.svg" alt="">
+                        <div class="icon-text">Technology</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-6.svg" alt="">
+                        <div class="icon-text">Agriculture</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-7.svg" alt="">
+                        <div class="icon-text">Real Estate</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-8.svg" alt="">
+                        <div class="icon-text">Data Privacy and Security</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-9.svg" alt="">
+                        <div class="icon-text">Social Development</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-10.svg" alt="">
+                        <div class="icon-text">Food</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-11.svg" alt="">
+                        <div class="icon-text">Legal</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-12.svg" alt="">
+                        <div class="icon-text">Insurance</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-13.svg" alt="">
+                        <div class="icon-text">Retail & Distribution</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-14.svg" alt="">
+                        <div class="icon-text">Sustainability</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-15.svg" alt="">
+                        <div class="icon-text">PR & Marketing</div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./assets/images/ind-16.svg" alt="">
+                        <div class="icon-text">Health & Fitness</div>
+                    </div>
                 </div>
                 <button>
                     <img src="./assets/images/see-more.svg" alt="">
@@ -680,6 +808,7 @@
         <div class="content-w">
             <div class="testimonials-container fade-in">
                 <h1 class="test-text">What our clients are saying</h1>
+                <p class="test-subtext">We combine research & design to connect business goals to users’ needs</p>
                 <div class="test-content">
                     <div class="test-card fade-in">
                         <div class="test-card-h">Highly Recommended</div>
@@ -702,15 +831,46 @@
                 </div>
             </div>
         </div>
-        <div class="sub-footer fade-in">
+        <!-- <div class="sub-footer fade-in">
             <div class="sub-footer-content">
                 <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
                 <a href="contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in
                         Touch</button></a>
             </div>
-        </div>
+        </div> -->
         <div class="footer-true">
-            <div class="company-foot">
+            <div class="footer-content">
+                <div class="footer-content-left">
+                    <div class="ideas">
+                        We say yes to <span> ideas</span>. <br> Let’s discuss one
+                    </div>
+                    <div class="footer-circle">
+                        <img src="./assets/images/footer-circle.svg" alt="">
+                    </div>
+                    <div class="company-details">
+                        <div class="address">
+                            <img class="ad-logo" src="./assets/images/Group 134.svg" alt="">
+                            <img class="footer-vl" src="./services/images/Rectangle 98.png" alt=""
+                                style="height: 102px;">
+                            <p><span style="font-weight:bold;">UXUI Studio Company</span><br> 214, First Floor,
+                                Suvidha,<br>
+                                Plot No 10, Sector-56,<br> Gurugram, 122011</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-right">
+                    <a href="contact" style="text-decoration: none;"><button class="footer-btn">Get in
+                            Touch</button></a>
+                    <div class="contact-links">
+                        <a href="about/" style="text-decoration: none;">About</a>
+                        <a href="work/" style="text-decoration: none;">Work</a>
+                        <a href="services/" style="text-decoration: none;">Services</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="company-foot">
                 <div class="company-details">
                     <div class="address">
                         <img class="ad-logo" src="./assets/images/Group 134.svg" alt="">
@@ -735,6 +895,20 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+        </div>
+        <div class="post-footer">
+            <div class="post-footer-content">
+                <div class="rights">All rights reserved with UXUI STudio Pvt. Ltd. | 2022</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                        src="assets/images/Insta.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                            src="assets/images/linkedin.svg" alt=""></a>
+                    
+                    <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                            src="assets/images/Facebook.svg" alt=""></a>
+                </div>
             </div>
         </div>
 
@@ -757,13 +931,14 @@
                         <a href="work/">Work</a>
                     </div>
                     <div class="mobile-social-links">
-                        <a href="contact/" target="_blank"><img src="assets/images/mail-large.svg" alt=""></a>
+                        <!-- <a href="contact/" target="_blank"><img src="assets/images/mail-large.svg" alt=""></a> -->
+                        <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                            src="assets/images/Insta.svg" alt=""></a>
                         <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
                                 src="assets/images/linkedin.svg" alt=""></a>
-                        <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
-                                src="assets/images/ig.svg" alt=""></a>
+                        
                         <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
-                                src="assets/images/fb.svg" alt=""></a>
+                                src="assets/images/Facebook.svg" alt=""></a>
                     </div>
                 </div>
             </div>
