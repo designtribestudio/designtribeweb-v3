@@ -884,6 +884,17 @@ color: #E08433;
 .featured-btns {
     /* min-width: 1140px; */
     width: var(--width);
+    width: 1140px;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto 40px auto;
+}
+
+.exp-container .featured-btns{
+    width: var(--width);
     width: 500px;
     position: relative;
     float: right;
@@ -895,7 +906,6 @@ color: #E08433;
     top: -70px;
     right: 125px;
 }
-
 .featured-btns button {
     margin-top: 4px;
     border: none;
