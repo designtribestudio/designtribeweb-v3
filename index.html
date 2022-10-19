@@ -98,7 +98,7 @@
                     <h1 id="h-mid" class="">Let’s tell stories through <br>
                         <a href="" style="text-decoration: none; color: black;" class="typewrite" data-period="2000"
                             data-type='[ "Research", "User Experience", "UX Strategy", "Visual Design", "Branding", "Business Presentation" ]'>
-                            <span class="wrap" style="height: 72px; display: block; font-size: 72px;">
+                            <span class="wrap" style="height: 72px; display: block; font-size: 60px; ">
                             </span>
                         </a>
                         <!-- <span>
@@ -489,10 +489,10 @@
             </div>
         </div>
 
-        <div class="services-container-mobile fade-in">
+        <div class="services-container-mobile ">
             <h1>How can we help you?</h1>
             <p>We combine research & design to connect business goals to users’ needs</p>
-            <div class="services-mobile-carousel">
+            <!-- <div class="services-mobile-carousel">
                 <div class="services-card fade-in">
                     <div class="services-img">
                         <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/ux.gif" alt="">
@@ -553,316 +553,428 @@
                         deploying and supporting. We plan tailored solutions for you to achieve operational excellence
                         and deliver them fast and error-free.</p>
                 </div>
+            </div> -->
+
+            <div class="mobile-slideshow-container">
+                <div class="mobileSlides fade">
+                    <div class="ms-container">
+                        <img src="./assets/images/ux.gif" style="width:100%">
+                        <div class="ms-card">
+                            <div class="ms-title">User Experience</div>
+                            <div class="ms-sub">We design positive experiences that connect
+                                business goals to users’ needs. Having a great product experience is essential to retain
+                                customers, promote brand loyalty and attract new ones.</div>
+                            <a href=""> <button class="ms-btn"><img src="./assets/images/ms-btn.svg" alt=""></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobileSlides fade">
+                    <div class="ms-container">
+                        <img src="./assets/images/ur.gif" style="width:100%">
+                        <div class="ms-card">
+                            <div class="ms-title">User Research & Strategy</div>
+                            <div class="ms-sub">User research focuses on understanding user
+                                behaviours, needs, and motivations through observation techniques, task analysis, and other
+                                feedback methodologies.</div>
+                            <a href=""> <button class="ms-btn"><img src="./assets/images/ms-btn.svg" alt=""></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobileSlides fade">
+                    <div class="ms-container">
+                        <img src="./assets/images/pre.gif" style="width:100%">
+                        <div class="ms-card">
+                            <div class="ms-title">Presentation Design</div>
+                            <div class="ms-sub">Our team can craft an array of ideas, stories,
+                                words and images into a set of slides to tell your story!</div>
+                            <a href=""> <button class="ms-btn"><img src="./assets/images/ms-btn.svg" alt=""></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobileSlides fade">
+                    <div class="ms-container">
+                        <img src="./assets/images/vnb.gif" style="width:100%">
+                        <div class="ms-card">
+                            <div class="ms-title">Visual and Branding</div>
+                            <div class="ms-sub">When we talk about branding and logo design, we
+                                refer to the key brand elements such as the logo, colour scheme, typography and other design
+                                elements.</div>
+                            <a href=""> <button class="ms-btn"><img src="./assets/images/ms-btn.svg" alt=""></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobileSlides fade">
+                    <div class="ms-container">
+                        <img src="./assets/images/dev.gif" style="width:100%">
+                        <div class="ms-card">
+                            <div class="ms-title">Development</div>
+                            <div class="ms-sub">Development services are aimed at designing,
+                                deploying and supporting. We plan tailored solutions for you to achieve operational excellence
+                                and deliver them fast and error-free.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="mob-prev" onclick="mobilePlusSlides(-1)">❮</a>
+                <a class="mob-next" onclick="mobilePlusSlides(1)">❯</a>
             </div>
 
+            <div style="text-align:center">
+                <span class="mobileDot" onclick="mobileCurrentSlide(1)"></span> 
+                <span class="mobileDot" onclick="mobileCurrentSlide(2)"></span> 
+                <span class="mobileDot" onclick="mobileCurrentSlide(3)"></span> 
+                <span class="mobileDot" onclick="mobileCurrentSlide(4)"></span> 
+                <span class="mobileDot" onclick="mobileCurrentSlide(5)"></span> 
+            </div>
 
-        </div>
-        <!-- <img id="dt-water-right" src="assets/images/dt-r-w.svg" alt=""> -->
+            <script>
+                let mobileslideIndex = 1;
+                mobileshowSlides(mobileslideIndex);
+                
+                function mobilePlusSlides(n) {
+                  mobileshowSlides(mobileslideIndex += n);
+                }
+                
+                function mobileCurrentSlide(n) {
+                  mobileshowSlides(mobileslideIndex = n);
+                }
+                
+                function mobileshowSlides(n) {
+                  let i;
+                  let mobileslides = document.getElementsByClassName("mobileSlides");
+                  let mobiledots = document.getElementsByClassName("mobileDot");
+                  if (n > mobileslides.length) {mobileslideIndex = 1}    
+                  if (n < 1) {mobileslideIndex = mobileslides.length}
+                  for (i = 0; i < mobileslides.length; i++) {
+                    mobileslides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < mobiledots.length; i++) {
+                    mobiledots[i].className = mobiledots[i].className.replace(" active", "");
+                  }
+                  mobileslides[mobileslideIndex-1].style.display = "block";  
+                  mobiledots[mobileslideIndex-1].className += " active";
+                }
+                </script>
+            <!-- <img id="dt-water-right" src="assets/images/dt-r-w.svg" alt=""> -->
 
-        <div class="info-container fade-in">
-            <!-- <div class="info">
+            <div class="info-container fade-in">
+                <!-- <div class="info">
                 <img src="assets/images/About-left.svg" alt="">
                 <div class="info-mobile">
                     <img src="assets/images/About-right.svg" alt="">
                 </div>
             </div> -->
 
-            <div class="i-cont fade-in">
-                <div class="i-cont-left">
-                    <div class="i-cont-left-img">
-                        <img src="assets/images/About-left.svg" alt="">
-                    </div>
-                </div>
-                <div class="i-cont-right">
-                    <div class="info-content">
-                        <div class="info-content-head">About Us</div>
-                        <div class="info-content-text">
-                            We are passionate group of designers, technologists, strategists, and creative problem
-                            solvers
-                            seeking to make a positive impact on your business and the world around us.
-                        </div>
-                        <div class="info-btn-front">
-                            <a href="about/" style="text-decoration: none;"><button class="exp-btn info-btn">
-                                    Know More
-                                </button></a>
+                <div class="i-cont fade-in">
+                    <div class="i-cont-left">
+                        <div class="i-cont-left-img">
+                            <img src="assets/images/About-left.svg" alt="">
                         </div>
                     </div>
-                </div>
+                    <div class="i-cont-right">
+                        <div class="info-content">
+                            <div class="info-content-head">About Us</div>
+                            <div class="info-content-text">
+                                We are passionate group of designers, technologists, strategists, and creative problem
+                                solvers
+                                seeking to make a positive impact on your business and the world around us.
+                            </div>
+                            <div class="info-btn-front">
+                                <a href="about/" style="text-decoration: none;"><button class="exp-btn info-btn">
+                                        Know More
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
             </div>
-        </div>
 
-        <div class="exp-container fade-in">
-            <div class="slideshow-container">
-                <div class="mySlides2">
-                    <div class="exp1">
-                        <div class="exp1-img">
-                            <img src="./assets/images/user-research-img.png" alt="">
-                        </div>
-                        <div class="exp1-text">
-                            <div class="exp1-head" style="color: #006A4E;">User Research</div>
-                            <div class="exp1-sub">We combine Human Elements and Informational Elements to give you the
-                                desired outcomes with keeping the User as a priority.</div>
-                            <a class="exp1-btn-1" class="exp-btn-services" href="./services/"
-                                style="text-decoration: none;"><button class="exp-btn-main">
-                                    Explore More
-                                </button></a>
+            <div class="exp-container fade-in">
+                <div class="slideshow-container">
+                    <div class="mySlides2">
+                        <div class="exp1">
+                            <div class="exp1-img">
+                                <img src="./assets/images/user-research-img.png" alt="">
+                            </div>
+                            <div class="exp1-text">
+                                <div class="exp1-head" style="color: #006A4E;">User Research</div>
+                                <div class="exp1-sub">We combine Human Elements and Informational Elements to give you
+                                    the
+                                    desired outcomes with keeping the User as a priority.</div>
+                                <a class="exp1-btn-1" class="exp-btn-services" href="./services/"
+                                    style="text-decoration: none;"><button class="exp-btn-main">
+                                        Explore More
+                                    </button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="mySlides2">
-                    <div class="exp1" style="background-color: #FFF4E3;">
-                        <div class="exp1-img" style="background: linear-gradient(123.76deg, #72132C 5.09%, #BF345E 37.38%, #72132C 82.03%);
+                    <div class="mySlides2">
+                        <div class="exp1" style="background-color: #FFF4E3;">
+                            <div class="exp1-img" style="background: linear-gradient(123.76deg, #72132C 5.09%, #BF345E 37.38%, #72132C 82.03%);
                         backdrop-filter: blur(22.8101px);">
-                            <img src="./assets/images/ux-img.png" alt="" style="width: 562px; height: 419.2px; position: relative; top: 85px; left: 85px;">
-                        </div>
-                        <div class="exp1-text">
-                            <div class="exp1-head" style="color: #E16900;">UX Strategy</div>
-                            <div class="exp1-sub">A detailed plan to align your brand’s identity with the desired user
-                                experience at every customer touchpoint to create the most efficient experience for your
-                                user.</div>
-                            <a class="exp1-btn" class="exp-btn-services" href="./services/user-research/"
-                                style="text-decoration: none;"><button class="exp-btn-main">
-                                    Explore More
-                                </button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mySlides2">
-                    <div class="exp1" style="background-color: #F5FEFF;">
-                        <div class="exp1-img" style="background-color: #95B6BA;">
-                            <img src="./assets/images/pd-img.png" alt="">
-                        </div>
-                        <div class="exp1-text">
-                            <div class="exp1-head" style="color: #006A4E;">Presentation Design</div>
-                            <div class="exp1-sub">Presentation design helps you to connect with your audience.
-                                We carefully create stories, choose style, organise design and enroot it to visual
-                                simplicity for easy understanding.</div>
-                            <a class="exp1-btn-1" class="exp-btn-services" href="./services/presentation/"
-                                style="text-decoration: none;"><button class="exp-btn-main">
-                                    Explore More
-                                </button></a>
+                                <img src="./assets/images/ux-img.png" alt=""
+                                    style="width: 562px; height: 419.2px; position: relative; top: 85px; left: 85px;">
+                            </div>
+                            <div class="exp1-text">
+                                <div class="exp1-head" style="color: #E16900;">UX Strategy</div>
+                                <div class="exp1-sub">A detailed plan to align your brand’s identity with the desired
+                                    user
+                                    experience at every customer touchpoint to create the most efficient experience for
+                                    your
+                                    user.</div>
+                                <a class="exp1-btn" class="exp-btn-services" href="./services/user-research/"
+                                    style="text-decoration: none;"><button class="exp-btn-main">
+                                        Explore More
+                                    </button></a>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="mySlides2">
+                        <div class="exp1" style="background-color: #F5FEFF;">
+                            <div class="exp1-img" style="background-color: #95B6BA;">
+                                <img src="./assets/images/pd-img.png" alt="">
+                            </div>
+                            <div class="exp1-text">
+                                <div class="exp1-head" style="color: #006A4E;">Presentation Design</div>
+                                <div class="exp1-sub">Presentation design helps you to connect with your audience.
+                                    We carefully create stories, choose style, organise design and enroot it to visual
+                                    simplicity for easy understanding.</div>
+                                <a class="exp1-btn-1" class="exp-btn-services" href="./services/presentation/"
+                                    style="text-decoration: none;"><button class="exp-btn-main">
+                                        Explore More
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="featured-btns">
+                    <button onclick="plusSlidesTwo(-1)"><img src="assets/images/arrow-left.svg" alt=""></button>
+                    <div class="dots2-container">
+                        <div class="f-dot2 f-dot2-active" onclick="currentSlideTwo(1)"></div>
+                        <div class="f-dot2" onclick="currentSlideTwo(2)"></div>
+                        <div class="f-dot2" onclick="currentSlideTwo(3)"></div>
+                    </div>
+                    <button onclick="plusSlidesTwo(1)"><img src="assets/images/arrow-right.svg" alt=""></button>
                 </div>
             </div>
 
-
-
-
-            <div class="featured-btns">
-                <button onclick="plusSlidesTwo(-1)"><img src="assets/images/arrow-left.svg" alt=""></button>
-                <div class="dots2-container">
-                    <div class="f-dot2 f-dot2-active" onclick="currentSlideTwo(1)"></div>
-                    <div class="f-dot2" onclick="currentSlideTwo(2)"></div>
-                    <div class="f-dot2" onclick="currentSlideTwo(3)"></div>
-                </div>
-                <button onclick="plusSlidesTwo(1)"><img src="assets/images/arrow-right.svg" alt=""></button>
-            </div>
-        </div>
-
-        <div class="section-discover">
-            <div class="section-discover-content">
-                <div class="sd-card">
-                    <div class="sd-content" style="width: 250px;">
-                        <img class="sd-icon" src="./assets/images/sd-discover.svg" alt="">
-                        <div class="sd-head">Discover</div>
-                        <div class="sd-text">User studies across various demographics, cultures to gather both
-                            qualitative &
-                            quantitative understanding of the target personas.</div>
-                        <ul class="sd-list" style="margin: 16px 0 0 0;">
-                            <li> Qualitative Research </li>
-                            <li> Quantitative Studies </li>
-                            <li> Heuristic Evaluation </li>
-                            <li> Usability Testing </li>
-                            <li> Competitor Analysis </li>
-                            <li> Global Benchmarking</li>
-                        </ul>
+            <div class="section-discover">
+                <div class="section-discover-content">
+                    <div class="sd-card">
+                        <div class="sd-content" style="width: 250px;">
+                            <img class="sd-icon" src="./assets/images/sd-discover.svg" alt="">
+                            <div class="sd-head">Discover</div>
+                            <div class="sd-text">User studies across various demographics, cultures to gather both
+                                qualitative &
+                                quantitative understanding of the target personas.</div>
+                            <ul class="sd-list" style="margin: 16px 0 0 0;">
+                                <li> Qualitative Research </li>
+                                <li> Quantitative Studies </li>
+                                <li> Heuristic Evaluation </li>
+                                <li> Usability Testing </li>
+                                <li> Competitor Analysis </li>
+                                <li> Global Benchmarking</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="sd-card" style="background-color: #253430;">
-                    <div class="sd-content" style="width: 250px;">
-                        <img class="sd-icon" src="./assets/images/sd-strategy.svg" alt="">
-                        <div class="sd-head">Strategy</div>
-                        <div class="sd-text">From brainstorming to wireframing, we Strategies everything in order to
-                            create
-                            a memorable experience.</div>
-                        <ul class="sd-list" style="margin: 44px 0 0 0;">
-                            <li> Design Thinking </li>
-                            <li> Product Strategy </li>
-                            <li> Product Roadmap </li>
-                            <li> Service Design </li>
-                            <li> Design Principles</li>
-                        </ul>
+                    <div class="sd-card" style="background-color: #253430;">
+                        <div class="sd-content" style="width: 250px;">
+                            <img class="sd-icon" src="./assets/images/sd-strategy.svg" alt="">
+                            <div class="sd-head">Strategy</div>
+                            <div class="sd-text">From brainstorming to wireframing, we Strategies everything in order to
+                                create
+                                a memorable experience.</div>
+                            <ul class="sd-list" style="margin: 44px 0 0 0;">
+                                <li> Design Thinking </li>
+                                <li> Product Strategy </li>
+                                <li> Product Roadmap </li>
+                                <li> Service Design </li>
+                                <li> Design Principles</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="sd-card">
-                    <div class="sd-content" style="width: 305px;">
-                        <img class="sd-icon" src="./assets/images/sd-design.svg" alt="">
-                        <div class="sd-head">Design</div>
-                        <div class="sd-text">Top notch design experiences across voice, web, mobile, AI etc to deliver
-                            value
-                            across platforms & emerging media</div>
-                        <ul class="sd-list" style="margin: 44px 0 0 0;">
-                            <li> Interaction Design
-                            <li> Presentation and Strategy </li>
-                            <li> Interface & Visual Design </li>
-                            <li> Prototyping & Usability testing </li>
-                            <li> Front end development </li>
-                            <li> Micro interactions & motion </li>
-                            <li> Branding & Illustration </li>
-                        </ul>
+                    <div class="sd-card">
+                        <div class="sd-content" style="width: 305px;">
+                            <img class="sd-icon" src="./assets/images/sd-design.svg" alt="">
+                            <div class="sd-head">Design</div>
+                            <div class="sd-text">Top notch design experiences across voice, web, mobile, AI etc to
+                                deliver
+                                value
+                                across platforms & emerging media</div>
+                            <ul class="sd-list" style="margin: 44px 0 0 0;">
+                                <li> Interaction Design
+                                <li> Presentation and Strategy </li>
+                                <li> Interface & Visual Design </li>
+                                <li> Prototyping & Usability testing </li>
+                                <li> Front end development </li>
+                                <li> Micro interactions & motion </li>
+                                <li> Branding & Illustration </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="section-industries">
-            <div class="content">
-                <div class="head">Industries we have worked for</div>
-                <div class="subhead">The knowledge gained from projects across industries helps us take up new
-                    challenges.
-                </div>
-                <div class="icon-grid" id="icon-grid">
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-1.svg" alt="">
-                        <div class="icon-text">Banking</div>
+            <div class="section-industries">
+                <div class="content">
+                    <div class="head">Industries we have worked for</div>
+                    <div class="subhead">The knowledge gained from projects across industries helps us take up new
+                        challenges.
                     </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-2.svg" alt="">
-                        <div class="icon-text">Education</div>
+                    <div class="icon-grid" id="icon-grid">
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-1.svg" alt="">
+                            <div class="icon-text">Banking</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-2.svg" alt="">
+                            <div class="icon-text">Education</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-3.svg" alt="">
+                            <div class="icon-text">Logistics</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-4.svg" alt="">
+                            <div class="icon-text">Shipping & Mailing</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-5.svg" alt="">
+                            <div class="icon-text">Technology</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-6.svg" alt="">
+                            <div class="icon-text">Agriculture</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-7.svg" alt="">
+                            <div class="icon-text">Real Estate</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-8.svg" alt="">
+                            <div class="icon-text">Data Privacy and Security</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-9.svg" alt="">
+                            <div class="icon-text">Social Development</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-10.svg" alt="">
+                            <div class="icon-text">Food</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-11.svg" alt="">
+                            <div class="icon-text">Legal</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-12.svg" alt="">
+                            <div class="icon-text">Insurance</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-13.svg" alt="">
+                            <div class="icon-text">Retail & Distribution</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-14.svg" alt="">
+                            <div class="icon-text">Sustainability</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-15.svg" alt="">
+                            <div class="icon-text">PR & Marketing</div>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./assets/images/ind-16.svg" alt="">
+                            <div class="icon-text">Health & Fitness</div>
+                        </div>
                     </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-3.svg" alt="">
-                        <div class="icon-text">Logistics</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-4.svg" alt="">
-                        <div class="icon-text">Shipping & Mailing</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-5.svg" alt="">
-                        <div class="icon-text">Technology</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-6.svg" alt="">
-                        <div class="icon-text">Agriculture</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-7.svg" alt="">
-                        <div class="icon-text">Real Estate</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-8.svg" alt="">
-                        <div class="icon-text">Data Privacy and Security</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-9.svg" alt="">
-                        <div class="icon-text">Social Development</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-10.svg" alt="">
-                        <div class="icon-text">Food</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-11.svg" alt="">
-                        <div class="icon-text">Legal</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-12.svg" alt="">
-                        <div class="icon-text">Insurance</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-13.svg" alt="">
-                        <div class="icon-text">Retail & Distribution</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-14.svg" alt="">
-                        <div class="icon-text">Sustainability</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-15.svg" alt="">
-                        <div class="icon-text">PR & Marketing</div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./assets/images/ind-16.svg" alt="">
-                        <div class="icon-text">Health & Fitness</div>
-                    </div>
-                </div>
-                <button onclick="toggleIconGrid()" style="cursor: pointer; padding: 10px;">
-                    <img src="./assets/images/see-more.svg" alt="">
-                </button>
-            </div>
-        </div>
-
-        <div class="content-w">
-            <div class="testimonials-container fade-in">
-                <h1 class="test-text">What our clients are saying</h1>
-                <p class="test-subtext">We combine research & design to connect business goals to users’ needs</p>
-                <div class="test-content">
-                    <div class="test-card fade-in">
-                        <div class="test-card-h">Highly Recommended</div>
-                        <div class="test-card-b">We worked with the team to get complete revamp of our Mobile App. They
-                            are thorough professionals and understand the consumer mobile space in & out. With very few
-                            briefings, team understood the requirements and delivered us the improvised version of the
-                            flow in record time.</div>
-                        <div class="test-card-id">Ruchika Sharma</div>
-                        <div class="test-card-id-sub">Co-Founder, CoFrsh</div>
-                    </div>
-                    <div class="test-card fade-in">
-                        <div class="test-card-h">Empathetic & Sincere</div>
-                        <div class="test-card-b">What I love about working with Deepak is his innate ability to simplify
-                            complex problem statements. He understands what you are trying to communicate to your
-                            consumer very well. His design and solutions will bring a smile on you face (you are like-
-                            this is so clear and fascinating way to communicate; why didn't it strike us!).</div>
-                        <div class="test-card-id">Agam Khare</div>
-                        <div class="test-card-id-sub">Absolute Foods</div>
-                    </div>
+                    <button onclick="toggleIconGrid()" style="cursor: pointer; padding: 10px;">
+                        <img src="./assets/images/see-more.svg" alt="">
+                    </button>
                 </div>
             </div>
-        </div>
-        <!-- <div class="sub-footer fade-in">
+
+            <div class="content-w">
+                <div class="testimonials-container fade-in">
+                    <h1 class="test-text">What our clients are saying</h1>
+                    <p class="test-subtext">We combine research & design to connect business goals to users’ needs</p>
+                    <div class="test-content">
+                        <div class="test-card fade-in">
+                            <div class="test-card-h">Highly Recommended</div>
+                            <div class="test-card-b">We worked with the team to get complete revamp of our Mobile App.
+                                They
+                                are thorough professionals and understand the consumer mobile space in & out. With very
+                                few
+                                briefings, team understood the requirements and delivered us the improvised version of
+                                the
+                                flow in record time.</div>
+                            <div class="test-card-id">Ruchika Sharma</div>
+                            <div class="test-card-id-sub">Co-Founder, CoFrsh</div>
+                        </div>
+                        <div class="test-card fade-in">
+                            <div class="test-card-h">Empathetic & Sincere</div>
+                            <div class="test-card-b">What I love about working with Deepak is his innate ability to
+                                simplify
+                                complex problem statements. He understands what you are trying to communicate to your
+                                consumer very well. His design and solutions will bring a smile on you face (you are
+                                like-
+                                this is so clear and fascinating way to communicate; why didn't it strike us!).</div>
+                            <div class="test-card-id">Agam Khare</div>
+                            <div class="test-card-id-sub">Absolute Foods</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="sub-footer fade-in">
             <div class="sub-footer-content">
                 <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
                 <a href="contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in
                         Touch</button></a>
             </div>
         </div> -->
-        <div class="footer-true">
-            <div class="footer-content">
-                <div class="footer-content-left">
-                    <div class="ideas">
-                        We say yes to <span> ideas</span>. <br> Let’s discuss one
-                    </div>
-                    <div class="footer-circle">
-                        <img src="./assets/images/footer-circle.svg" alt="">
-                    </div>
-                    <div class="company-details">
-                        <div class="address">
-                            <img class="ad-logo" src="./assets/images/Group 134.svg" alt="">
-                            <img class="footer-vl" src="./services/images/Rectangle 98.png" alt=""
-                                style="height: 102px;">
-                            <p><span style="font-weight:bold;">UXUI Studio Company</span><br> 214, First Floor,
-                                Suvidha,<br>
-                                Plot No 10, Sector-56,<br> Gurugram, 122011</p>
+            <div class="footer-true">
+                <div class="footer-content">
+                    <div class="footer-content-left">
+                        <div class="ideas">
+                            We say yes to <span> ideas</span>. <br> Let’s discuss one
+                        </div>
+                        <div class="footer-circle">
+                            <img src="./assets/images/footer-circle.svg" alt="">
+                        </div>
+                        <div class="company-details">
+                            <div class="address">
+                                <img class="ad-logo" src="./assets/images/Group 134.svg" alt="">
+                                <img class="footer-vl" src="./services/images/Rectangle 98.png" alt=""
+                                    style="height: 102px;">
+                                <p><span style="font-weight:bold;">UXUI Studio Company</span><br> 214, First Floor,
+                                    Suvidha,<br>
+                                    Plot No 10, Sector-56,<br> Gurugram, 122011</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="footer-content-right">
-                    <a href="contact" style="text-decoration: none;"><button class="footer-btn">Get in
-                            Touch</button></a>
-                    <div class="contact-links">
-                        <a href="about/" style="text-decoration: none;">About</a>
-                        <a href="work/" style="text-decoration: none;">Work</a>
-                        <a href="services/" style="text-decoration: none;">Services</a>
+                    <div class="footer-content-right">
+                        <a href="contact" style="text-decoration: none;"><button class="footer-btn">Get in
+                                Touch</button></a>
+                        <div class="contact-links">
+                            <a href="about/" style="text-decoration: none;">About</a>
+                            <a href="work/" style="text-decoration: none;">Work</a>
+                            <a href="services/" style="text-decoration: none;">Services</a>
+                        </div>
                     </div>
+
                 </div>
 
-            </div>
-
-            <!-- <div class="company-foot">
+                <!-- <div class="company-foot">
                 <div class="company-details">
                     <div class="address">
                         <img class="ad-logo" src="./assets/images/Group 134.svg" alt="">
@@ -888,125 +1000,126 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-        <div class="post-footer">
-            <div class="post-footer-content">
-                <div class="rights">All rights reserved with UXUI STudio Pvt. Ltd. | 2022</div>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
-                        src="assets/images/Insta.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
-                            src="assets/images/linkedin.svg" alt=""></a>
-                    
-                    <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
-                            src="assets/images/Facebook.svg" alt=""></a>
-                </div>
             </div>
-        </div>
-
-        <div class="footer-mobile">
-            <div class="footer-mobile-content">
-                <div class="footer-mobile-top">
-                    <div class="footer-mobile-top-img">
-                        <img src="assets/images/mobile-nav-logo.png" style="width: 106px;" alt="">
-                    </div>
-                    <div class="footer-mobile-vl"></div>
-                    <div class="footer-mobile-address">
-                        <span style="font-weight: 600;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS,
-                        <br> GH 10, Gurugram,<br> Haryana, 122011
-                    </div>
-                </div>
-                <div class="footer-mobile-bottom">
-                    <div class="mobile-contact-links">
-                        <a href="services/">Services</a>
-                        <a href="about/">About</a>
-                        <a href="work/">Work</a>
-                    </div>
-                    <div class="mobile-social-links">
-                        <!-- <a href="contact/" target="_blank"><img src="assets/images/mail-large.svg" alt=""></a> -->
+            <div class="post-footer">
+                <div class="post-footer-content">
+                    <div class="rights">All rights reserved with UXUI STudio Pvt. Ltd. | 2022</div>
+                    <div class="social-links">
                         <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
-                            src="assets/images/Insta.svg" alt=""></a>
+                                src="assets/images/Insta.svg" alt=""></a>
                         <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
                                 src="assets/images/linkedin.svg" alt=""></a>
-                        
+
                         <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
                                 src="assets/images/Facebook.svg" alt=""></a>
                     </div>
                 </div>
             </div>
+
+            <div class="footer-mobile">
+                <div class="footer-mobile-content">
+                    <div class="footer-mobile-top">
+                        <div class="footer-mobile-top-img">
+                            <img src="assets/images/mobile-nav-logo.png" style="width: 106px;" alt="">
+                        </div>
+                        <div class="footer-mobile-vl"></div>
+                        <div class="footer-mobile-address">
+                            <span style="font-weight: 600;">UXUI Studio Private Limited</span><br> B 214, The Suvidha
+                            CGHS,
+                            <br> GH 10, Gurugram,<br> Haryana, 122011
+                        </div>
+                    </div>
+                    <div class="footer-mobile-bottom">
+                        <div class="mobile-contact-links">
+                            <a href="services/">Services</a>
+                            <a href="about/">About</a>
+                            <a href="work/">Work</a>
+                        </div>
+                        <div class="mobile-social-links">
+                            <!-- <a href="contact/" target="_blank"><img src="assets/images/mail-large.svg" alt=""></a> -->
+                            <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                                    src="assets/images/Insta.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                                    src="assets/images/linkedin.svg" alt=""></a>
+
+                            <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                                    src="assets/images/Facebook.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                var header = document.getElementById("services-list");
+                var list = header.getElementsByClassName("services");
+                for (var i = 0; i < list.length; i++) {
+                    list[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("services-active");
+                        if (current.length > 0) {
+                            current[0].className = current[0].className.replace("services-active", "");
+                        }
+                        this.className += " services-active";
+                    });
+                }
+
+                var header2 = document.getElementById("services-btn-container-mobile");
+                var list2 = header2.getElementsByClassName("services-btn");
+                for (var i = 0; i < list2.length; i++) {
+                    list2[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("services-btn-active");
+                        if (current.length > 0) {
+                            current[0].className = current[0].className.replace("services-btn-active", "");
+                        }
+                        this.className += " services-btn-active";
+                    });
+                }
+            </script>
+
+
+            <script>
+                function more() {
+                    var more = document.getElementById("more");
+                    var btnText = document.getElementById("more-btn");
+                    if (more.style.display === "none") {
+                        more.style.display = "block";
+                        btnText.innerHTML = 'See less <i class="fa fa-angle-up" aria-hidden="true"></i>';
+                        btnText.style.margin = "50px auto 0 auto";
+                    }
+                    else {
+                        more.style.display = "none";
+                        btnText.innerHTML = 'See more <i class="fa fa-angle-down" aria-hidden="true"></i>';
+                        btnText.style.margin = "50px auto";
+                    }
+                }
+
+                function moreMobile() {
+                    var more = document.getElementById("more-mobile");
+                    var btnText = document.getElementById("more-btn-mobile");
+                    if (more.style.display === "none") {
+                        more.style.display = "block";
+                        btnText.innerHTML = 'See less <i class="fa fa-angle-up" aria-hidden="true"></i>';
+                        btnText.style.margin = "30px auto";
+                    }
+                    else {
+                        more.style.display = "none";
+                        btnText.innerHTML = 'See more <i class="fa fa-angle-down" aria-hidden="true"></i>';
+                        btnText.style.margin = "30px auto";
+                    }
+                }
+
+                function toggleIconGrid() {
+                    var icongrid = document.getElementById("icon-grid");
+                    if (icongrid.style.height === "350px") {
+                        icongrid.style.height = "700px";
+                    }
+                    else {
+                        icongrid.style.height = "350px";
+                    }
+                }
+            </script>
+            <script src="script.js"></script>
         </div>
-
-
-        <script>
-            var header = document.getElementById("services-list");
-            var list = header.getElementsByClassName("services");
-            for (var i = 0; i < list.length; i++) {
-                list[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("services-active");
-                    if (current.length > 0) {
-                        current[0].className = current[0].className.replace("services-active", "");
-                    }
-                    this.className += " services-active";
-                });
-            }
-
-            var header2 = document.getElementById("services-btn-container-mobile");
-            var list2 = header2.getElementsByClassName("services-btn");
-            for (var i = 0; i < list2.length; i++) {
-                list2[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("services-btn-active");
-                    if (current.length > 0) {
-                        current[0].className = current[0].className.replace("services-btn-active", "");
-                    }
-                    this.className += " services-btn-active";
-                });
-            }
-        </script>
-
-
-        <script>
-            function more() {
-                var more = document.getElementById("more");
-                var btnText = document.getElementById("more-btn");
-                if (more.style.display === "none") {
-                    more.style.display = "block";
-                    btnText.innerHTML = 'See less <i class="fa fa-angle-up" aria-hidden="true"></i>';
-                    btnText.style.margin = "50px auto 0 auto";
-                }
-                else {
-                    more.style.display = "none";
-                    btnText.innerHTML = 'See more <i class="fa fa-angle-down" aria-hidden="true"></i>';
-                    btnText.style.margin = "50px auto";
-                }
-            }
-
-            function moreMobile() {
-                var more = document.getElementById("more-mobile");
-                var btnText = document.getElementById("more-btn-mobile");
-                if (more.style.display === "none") {
-                    more.style.display = "block";
-                    btnText.innerHTML = 'See less <i class="fa fa-angle-up" aria-hidden="true"></i>';
-                    btnText.style.margin = "30px auto";
-                }
-                else {
-                    more.style.display = "none";
-                    btnText.innerHTML = 'See more <i class="fa fa-angle-down" aria-hidden="true"></i>';
-                    btnText.style.margin = "30px auto";
-                }
-            }
-
-            function toggleIconGrid(){
-                var icongrid = document.getElementById("icon-grid");
-                if (icongrid.style.height === "350px"){
-                    icongrid.style.height = "700px";
-                }
-                else{
-                    icongrid.style.height = "350px";
-                }
-            }
-        </script>
-        <script src="script.js"></script>
-    </div>
 </body>
 
 </html>
