@@ -833,34 +833,72 @@
         </div>
 
         <div class="sd-mobile">
-            <button class="collapsible" style="background: #1D2926;"><div class="sd-c">
-                <img src="./assets/images/sd-discover-m.svg"
-                    alt="">Discover
-            </div></button>
+            <button class="collapsible" style="background: #1D2926;">
+                <div class="sd-c">
+                    <img src="./assets/images/sd-discover-m.svg" alt="">Discover
+                </div>
+            </button>
             <div class="content" style="background: #1D2926;">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="collapsible" style="background: #253430;"><div class="sd-c">
-                <img src="./assets/images/sd-strategy-m.svg"
-                    alt="">Strategy
-            </div></button>
-            <div class="content" style="background: #253430;">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-            </div>
-            <button class="collapsible" style="background: #2D403B;"><div class="sd-c">
-                <img src="./assets/images/sd-design-m.svg"
-                    alt="">Design
-            </div></button>
-            <div class="content" style="background: #2D403B;">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                <div class="sd-text">User studies across various demographics, cultures to gather both
+                    qualitative &
+                    quantitative understanding of the target personas.</div>
+                <div class="sd-sub">
+                    <ul class="sd-list" style="margin: 16px 0 0 0;">
+                        <li> Qualitative Research </li>
+                        <li> Quantitative Studies </li>
+                        <li> Heuristic Evaluation </li>
+                        <li> Usability Testing </li>
+                        <li> Competitor Analysis </li>
+                        <li> Global Benchmarking</li>
+                    </ul>
+                    <img src="./assets/images/discover-wm.svg" alt="">
+                </div>
 
-                </p>
+            </div>
+            <button class="collapsible" style="background: #253430;">
+                <div class="sd-c">
+                    <img src="./assets/images/sd-strategy-m.svg" alt="">Strategy
+                </div>
+            </button>
+            <div class="content" style="background: #253430;">
+                <div class="sd-text">From brainstorming to wireframing, we Strategies everything in order to
+                    create
+                    a memorable experience.</div>
+                <div class="sd-sub">
+                    <ul class="sd-list" style="margin: 16px 0 0 0;">
+                        <li> Design Thinking </li>
+                        <li> Product Strategy </li>
+                        <li> Product Roadmap </li>
+                        <li> Service Design </li>
+                        <li> Design Principles</li>
+                    </ul>
+                    <img src="./assets/images/startegy-wm.svg" alt="">
+                </div>
+
+            </div>
+            <button class="collapsible" style="background: #2D403B;">
+                <div class="sd-c">
+                    <img src="./assets/images/sd-design-m.svg" alt="">Design
+                </div>
+            </button>
+            <div class="content" style="background: #2D403B;">
+                <div class="sd-text">Top notch design experiences across voice, web, mobile, AI etc to
+                    deliver
+                    value
+                    across platforms & emerging media</div>
+                <div class="sd-sub">
+                    <ul class="sd-list" style="margin: 16px 0 0 0;">
+                        <li> Interaction Design
+                        <li> Presentation and Strategy </li>
+                        <li> Interface & Visual Design </li>
+                        <li> Prototyping & Usability testing </li>
+                        <li> Front end development </li>
+                        <li> Micro interactions & motion </li>
+                        <li> Branding & Illustration </li>
+                    </ul>
+                    <img src="./assets/images/design-wm.svg" alt="">
+                </div>
+
             </div>
         </div>
         <style>
@@ -894,12 +932,38 @@
             }
 
             .content {
+                font-family: 'Poppins';
+                font-style: normal;
+                color: #FFFFFF;
                 outline: none !important;
                 border: none !important;
                 padding: 0 18px;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.2s ease-out;
+            }
+
+            .content .sd-text {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                padding: 8px 0 0 0;
+            }
+
+            .content ul {
+                padding: 0 0 37px 10px;
+            }
+
+            .content ul li {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 24px;
+            }
+
+            .sd-sub {
+                width: calc(96vw);
+                display: flex;
+                justify-content: space-between;
             }
         </style>
         <script>
