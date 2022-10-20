@@ -2506,7 +2506,7 @@ line-height: 48px; */
         background: linear-gradient(123.76deg, #72132C 5.09%, #BF345E 37.38%, #72132C 82.03%);
         backdrop-filter: blur(22.8101px);
     }
-    
+
     #exp1-2 {
         width: 260px !important;
         height: 180px !important;
@@ -2514,18 +2514,18 @@ line-height: 48px; */
         top: 15px;
         left: 80px;
     }
-    
-    .exp1-head{
+
+    .exp1-head {
         margin: 30px 0 0 0;
         font-size: 12px;
-line-height: 18px;
+        line-height: 18px;
     }
 
-    .exp1-sub{
+    .exp1-sub {
         width: 320px;
         font-size: 12px;
-line-height: 24px;
-margin: 12px 0 30px 0;
+        line-height: 24px;
+        margin: 12px 0 30px 0;
     }
 
     .exp-container .featured-btns {
@@ -2541,35 +2541,179 @@ margin: 12px 0 30px 0;
         right: 125px;
     }
 
-    .exp-container .featured-btns{
+    .exp-container .featured-btns {
         width: 320px !important;
         margin: 0 auto !important;
         right: 40px;
-        top: 10px; 
+        top: 10px;
     }
 
     /* EXP END */
 
     /* DISCOVER START */
-    .section-discover{
+    .section-discover {
         display: none;
     }
 
-    .sd-mobile{
+    .sd-mobile {
         display: block;
         position: relative;
-        margin: 0 0 80px 0;
+        margin: 0 0 0 0;
     }
 
-    .sd-c{
+    .sd-c {
         display: flex;
         align-items: center;
     }
 
-    .sd-c > img{
+    .sd-c>img {
         margin-right: 20px;
     }
+
+    .collapsible {
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none !important;
+        text-align: left;
+        outline: none !important;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        height: 80px;
+    }
+
+    .collapsible:after {
+        content: url('./assets/images/collapsible-plus.svg');
+        color: white;
+        font-weight: bold;
+        float: right !important;
+        margin-left: 5px;
+        margin-top: -30px;
+    }
+
+    .sd-mobile .active:after {
+        content: url('./assets/images/collapsible-minus.svg');
+    }
+
+    .sd-mobile .content {
+        font-family: 'Poppins';
+        font-style: normal;
+        color: #FFFFFF;
+        outline: none !important;
+        border: none !important;
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .sd-mobile .content .sd-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 8px 0 0 0;
+    }
+
+    .sd-mobile .content ul {
+        padding: 0 0 37px 10px;
+    }
+
+    .sd-mobile .content ul li {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .sd-sub {
+        width: calc(96vw);
+        display: flex;
+        justify-content: space-between;
+    }
+
     /* DISCOVER END */
+
+    /* INDUSTRIES START */
+    .section-industries {
+        padding: 48px 0;
+        background: #ECF5F3;
+        margin-top: 0;
+        height: fit-content;
+    }
+
+    .section-industries .content {
+        width: 320px !important;
+        height: fit-content;
+        margin: 0 auto;
+    }
+
+    .section-industries .content .head {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    .section-industries .content .subhead {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height, or 117% */
+
+
+        color: #000000;
+    }
+
+    .icon-grid {
+        width: 320px;
+        height: 350px;
+        overflow: hidden;
+        margin: 54px auto 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .icon-item {
+        text-align: center;
+        margin: 0 0 94px 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .icon-item>img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* INDUSTRIES END */
+
+    .back-to-top button {
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        position: relative;
+        float: right;
+        right: 15px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        width: 125px;
+        justify-content: space-between;
+    }
+
     .testimonials-container {
         width: 90vw !important;
         margin-left: 0 !important;
@@ -2660,108 +2804,8 @@ margin: 12px 0 30px 0;
         box-shadow: inset 80px 0 0 0 #006A4E;
         font-weight: 800;
     }
-
-    /* .footer-true{
-        width: 100vw;
-        background: url('./about/assets/images/footer-only.png') !important;
-        background-size: cover !important;
-        height: 178px !important;
-        margin: 101px 0 0 0 !important;
-        padding: 0 !important;
-        min-height: 0 !important;
-    }
-    .company-foot{
-        margin: 35px auto 0 auto !important;
-        width: 100vw !important;
-        height: 45% !important;
-        padding: 0 !important;
-        background-size: cover !important;
-    }
-    .company-details{
-        width: 90vw !important;
-        margin: 20px auto 0 auto !important;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    .address{
-        margin: 65px 0 0 0 !important;
-        width: 189px !important;
-        height: 57px !important;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .ad-logo{
-        width: 67px !important;
-        height: 50px !important;
-    }
-
-    .footer-vl
-    {
-        height: 50px !important;
-    }
-    .address p{
-        font-family: 'Poppins', sans-serif;
-        font-size: 8px !important;
-        line-height: 14px !important;
-        color: #FFFFFF;
-        margin: 0 !important;
-        padding: 0 !important;
-
-    }
-
-    .address span{
-        font-size: 9px !important;
-        color:#FFFFFF;
-    }
-
-    .contact{
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-links{
-        width: 99px !important;
-        font-family: 'Poppins', sans-serif;
-        font-size: 8px !important;
-        letter-spacing: 0.8px !important;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px !important;
-        text-decoration: underline;
-        color: #FFFFFF;
-    }
-    .contact-links a{
-        color: white;
-    }
-    .contact-links a:visited{
-        color: white;
-    }
-    .contact-links a:hover{
-        color: #E14B2C;
-    }
-    .social-links{
-        width: 90px !important;
-        display: flex;
-        justify-content: space-between;
-    }
-    .social-links a{
-        width: 15px !important;
-    }
-    .social-links img{
-        margin: 0 !important;
-        width: 15px !important;
-        height: 15px !important;
-    } */
+    
     .footer-true {
         display: none;
     }
-
-    /* .footer-mobile{
-        margin-top: 10vw;
-        display: block;
-        background: url("assets/images/footer-mobile.png");
-        background-size: cover;
-    } */
 }

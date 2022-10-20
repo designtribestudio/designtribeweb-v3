@@ -901,71 +901,7 @@
 
             </div>
         </div>
-        <style>
-            .collapsible {
-                color: white;
-                cursor: pointer;
-                padding: 18px;
-                width: 100%;
-                border: none !important;
-                text-align: left;
-                outline: none !important;
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 30px;
-                height: 80px;
-            }
 
-            .collapsible:after {
-                content: '\002B';
-                color: white;
-                font-weight: bold;
-                float: right !important;
-                margin-left: 5px;
-                margin-top: -35px;
-            }
-
-            .active:after {
-                content: "\2212";
-            }
-
-            .content {
-                font-family: 'Poppins';
-                font-style: normal;
-                color: #FFFFFF;
-                outline: none !important;
-                border: none !important;
-                padding: 0 18px;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
-            }
-
-            .content .sd-text {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 18px;
-                padding: 8px 0 0 0;
-            }
-
-            .content ul {
-                padding: 0 0 37px 10px;
-            }
-
-            .content ul li {
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 24px;
-            }
-
-            .sd-sub {
-                width: calc(96vw);
-                display: flex;
-                justify-content: space-between;
-            }
-        </style>
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
@@ -1058,6 +994,7 @@
                 <button onclick="toggleIconGrid()" style="cursor: pointer; padding: 10px;">
                     <img src="./assets/images/see-more.svg" alt="">
                 </button>
+                <button class="si-mobile-btn"></button>
             </div>
         </div>
 
@@ -1092,13 +1029,21 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="sub-footer fade-in">
-            <div class="sub-footer-content">
-                <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
-                <a href="contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in
-                        Touch</button></a>
-            </div>
-        </div> -->
+
+        <div class="back-to-top">
+            <button onclick="topFunction()">
+                Back on top
+                <img src="./assets/images/backtotop.svg" alt="">
+            </button>
+        </div>
+        <script>
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+        
         <div class="footer-true">
             <div class="footer-content">
                 <div class="footer-content-left">
@@ -1130,48 +1075,8 @@
                 </div>
 
             </div>
-
-            <!-- <div class="company-foot">
-                <div class="company-details">
-                    <div class="address">
-                        <img class="ad-logo" src="./assets/images/Group 134.svg" alt="">
-                        <img class="footer-vl" src="./services/images/Rectangle 98.png" alt="" style="height: 102px;">
-                        <p><span style="font-weight:bold;">UXUI Studio Private Limited</span><br> B 214, The Suvidha
-                            CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011</p>
-                    </div>
-                    <div class="contact">
-                        <div class="contact-links">
-                            <a href="services/" style="text-decoration: none;">Services</a>
-                            <a href="about/" style="text-decoration: none;">About</a>
-                            <a href="work/" style="text-decoration: none;">Work</a>
-                        </div>
-                        <div class="social-links">
-                            <a href="contact/" target="_blank"><img src="assets/images/mail.svg" alt=""></a>
-                            <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
-                                    src="assets/images/linkedin.svg" alt=""></a>
-                            <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
-                                    src="assets/images/ig.svg" alt=""></a>
-                            <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
-                                    src="assets/images/fb.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
-        <div class="post-footer">
-            <div class="post-footer-content">
-                <div class="rights">All rights reserved with UXUI STudio Pvt. Ltd. | 2022</div>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
-                            src="assets/images/Insta.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
-                            src="assets/images/linkedin.svg" alt=""></a>
-
-                    <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
-                            src="assets/images/Facebook.svg" alt=""></a>
-                </div>
-            </div>
-        </div>
+        
 
         <div class="footer-mobile">
             <div class="footer-mobile-content">
@@ -1202,6 +1107,21 @@
                         <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
                                 src="assets/images/Facebook.svg" alt=""></a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-footer">
+            <div class="post-footer-content">
+                <div class="rights">All rights reserved with UXUI STudio Pvt. Ltd. | 2022</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                            src="assets/images/Insta.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                            src="assets/images/linkedin.svg" alt=""></a>
+
+                    <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                            src="assets/images/Facebook.svg" alt=""></a>
                 </div>
             </div>
         </div>

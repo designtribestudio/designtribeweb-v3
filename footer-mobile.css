@@ -17,11 +17,9 @@
         position: relative;
         display: block;
         width: 100vw;
-        height: 91.574vw;
-        max-height: 400px;
+        height: 382px;
         margin-top: 30px;
-        background: url('./assets/images/footer-mobile.png'); 
-        background-size: cover;
+        background: linear-gradient(102.89deg, #334541 8.59%, #1D2926 41.7%);
     }
     .footer-mobile-content{
         width: 100vw;
