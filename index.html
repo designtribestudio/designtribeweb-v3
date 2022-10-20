@@ -35,15 +35,20 @@
         <div class="content-wrapper" id="content-wrapper">
             <div class="header-container">
                 <div class="header">
-                    <a href="./"><img class="logo" src="assets/images/dt-logo.svg" alt=""></a>
+                    <a href="./"><img class="logo" id="logo" src="assets/images/dt-logo.svg" alt=""></a>
 
-                    <div class="topnav" id="myTopnav">
+                    <!-- <div class="topnav" id="myTopnav">
                         <a class="nav-link"></a>
                         <a class="nav-link active" href="./">Home</a>
                         <a class="nav-link" href="./about/">About Us</a>
                         <a class="nav-link" href="./work/">Work</a>
                         <a class="nav-link " href="./services/">Services</a>
                         <a class="nav-link" href="./contact/"><button id="nav-btn">Get in Touch</button></a>
+                    </div> -->
+                    <div class="topnav-web">
+                        <button class="icon" onclick="myFunctionWeb()">
+                            <img id="icon" src="assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
                     </div>
                     <div class="topnav-mobile">
                         <button class="icon" onclick="myFunction()">
@@ -51,8 +56,9 @@
                         </button>
                     </div>
                 </div>
+                
 
-                <div class="topnav-menu" id="topnav-menu">
+                <div class="topnav-menu" id="topnav-menu" >
                     <div class="topnav-menu-links">
                         <a class="nav-link active" href="./">Home</a>
                         <a class="nav-link" href="./about/">About Us</a>
@@ -65,22 +71,66 @@
                     </div>
                 </div>
             </div>
+
+            <div class="topnav-menu-web" id="topnav-menu-web" >
+                <div class="tmw-container">
+                    <div class="topnav-menu-links-web">
+                        <a class="nav-link-web active" href="./">Home</a>
+                        <hr>
+                        <a class="nav-link-web" href="./about/">About Us</a>
+                        <hr>
+                        <a class="nav-link-web" href="./work/">Work</a>
+                        <hr>
+                        <a class="nav-link-web " href="./services/">Services</a>
+                        <a class="nav-link-web" href="./contact/"><button id="nav-btn-web">Get in Touch</button></a>
+                    </div>
+                    <div class="tmw-extras">
+                        <img src="./assets/images/dt-eye.svg" alt="">
+                        <p>We are passionate group of technologists, strategists, and creative problem solvers seeking to make a positive impact on your business and the world around us.</p>
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
         <script>
             function myFunction() {
                 var menu = document.getElementById("topnav-menu");
+                var idea = document.getElementById("ideas");
                 var icon = document.getElementById("icon");
                 var head = document.getElementById("content-wrapper");
                 if (menu.className == "topnav-menu") {
                     menu.className = "topnav-menu-active";
                     icon.src = "assets/images/cancel.png";
-                    head.style.background = "#006A4E";
+                    head.style.background = "#1D2926";
+                    ideas.style.display ="none";
                 }
                 else {
                     menu.className = "topnav-menu";
                     icon.src = "assets/images/stroke.png"
                     head.style.background = "white";
+                    ideas.style.display = "block";
+                }
+            }
+            function myFunctionWeb() {
+                var menu = document.getElementById("topnav-menu-web");
+                var ideasWeb = document.getElementById("ideas-web");
+                var icon = document.getElementById("icon");
+                var head = document.getElementById("content-wrapper");
+                var logo = document.getElementById('logo');
+                if (menu.className == "topnav-menu") {
+                    menu.className = "topnav-menu-active";
+                    icon.src = "assets/images/cancel.png";
+                    head.style.background = "#1D2926";
+                    ideasWeb.style.display ="none";
+                    logo.src='./assets/images/dt-logo-white.svg';
+                }
+                else {
+                    menu.className = "topnav-menu";
+                    icon.src = "assets/images/stroke.png"
+                    head.style.background = "white";
+                    ideasWeb.style.display = "block";
+                    logo.src='./assets/images/dt-logo.svg';
                 }
             }
         </script>
@@ -351,7 +401,7 @@
         <div class="featured-container-mobile" id="featured-container-mobile">
             <div class="featured-mobile fade-in">
                 <h1>Featured Stories</h1>
-                <p>Take a look at what we have done</p>
+                <!-- <p>Take a look at what we have done</p> -->
                 <div class="featured-cards-mobile">
                     <div class="mySlides-mobile fade">
                         <!-- <div class="fc1" onclick="location.href='./work/neopay/'"> -->
@@ -492,68 +542,6 @@
         <div class="services-container-mobile ">
             <h1>How can we help you?</h1>
             <p>We combine research & design to connect business goals to users’ needs</p>
-            <!-- <div class="services-mobile-carousel">
-                <div class="services-card fade-in">
-                    <div class="services-img">
-                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/ux.gif" alt="">
-                    </div>
-                    <h1 id="sc-h-mobile">User Experience</h1>
-                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">We design positive experiences that connect
-                        business goals to users’ needs. Having a great product experience is essential to retain
-                        customers, promote brand loyalty and attract new ones.</p>
-
-                    <a id="sc-btn-mobile" href="services"><button class="sc-btn sc-btn-active exp-btn">Know
-                            More</button></a>
-                </div>
-
-                <div class="services-card fade-in">
-                    <div class="services-img">
-                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/ur.gif" alt="">
-                    </div>
-                    <h1 id="sc-h-mobile">User Research & Strategy</h1>
-                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">User research focuses on understanding user
-                        behaviours, needs, and motivations through observation techniques, task analysis, and other
-                        feedback methodologies.</p>
-
-                    <a id="sc-btn-mobile" href="services/user-research/"><button
-                            class="sc-btn sc-btn-active exp-btn">Know More</button></a>
-                </div>
-
-                <div class="services-card fade-in">
-                    <div class="services-img">
-                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/pre.gif" alt="">
-                    </div>
-                    <h1 id="sc-h-mobile">Presentation Design</h1>
-                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">Our team can craft an array of ideas, stories,
-                        words and images into a set of slides to tell your story!</p>
-
-                    <a id="sc-btn-mobile" href="services/presentation/"><button
-                            class="sc-btn sc-btn-active exp-btn">Know More</button></a>
-                </div>
-
-                <div class="services-card fade-in">
-                    <div class="services-img">
-                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/vnb.gif" alt="">
-                    </div>
-                    <h1 id="sc-h-mobile">Visual and Branding</h1>
-                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">When we talk about branding and logo design, we
-                        refer to the key brand elements such as the logo, colour scheme, typography and other design
-                        elements.</p>
-
-                    <a id="sc-btn-mobile" href="services/branding/"><button class="sc-btn sc-btn-active exp-btn">Know
-                            More</button></a>
-                </div>
-
-                <div class="services-card fade-in">
-                    <div class="services-img">
-                        <img id="sc-active-mobile" class="sc sc-active fade-in" src="assets/images/dev.gif" alt="">
-                    </div>
-                    <h1 id="sc-h-mobile">Development</h1>
-                    <p class="sc-p sc-p-active" id="sc-p-active-mobile">Development services are aimed at designing,
-                        deploying and supporting. We plan tailored solutions for you to achieve operational excellence
-                        and deliver them fast and error-free.</p>
-                </div>
-            </div> -->
 
             <div class="mobile-slideshow-container">
                 <div class="mobileSlides fade">
@@ -1048,7 +1036,7 @@
             <div class="footer-content">
                 <div class="footer-content-left">
                     
-                    <div class="ideas">
+                    <div class="ideas" id="ideas-web">
                         We say yes to <span> ideas</span>. <br> Let’s discuss one
                     </div>
                     <div class="footer-circle">
@@ -1084,7 +1072,7 @@
             <div class="mobile-footer-content">
                 
                     
-                    <div class="ideas">
+                    <div class="ideas" id="ideas">
                         We say yes to <span> ideas</span>. <br> Let’s discuss one
                     </div>
                     <div class="mobile-footer-circle">

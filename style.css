@@ -161,9 +161,9 @@ body {
     justify-content: space-between;
 }
 
-.topnav-mobile {
+/* .topnav-mobile {
     display: none;
-}
+} */
 
 .topnav-menu {
     display: none;
@@ -171,7 +171,7 @@ body {
 }
 
 .topnav-menu-active {
-    background: #006A4E;
+    background: #1D2926;
     width: 100vw;
     height: calc(100vh - 50px);
     display: flex;
@@ -181,7 +181,7 @@ body {
     align-items: center;
     transition: 0.4ms ease-in;
     position: relative;
-    z-index: 999;
+    z-index: 3;
 }
 
 .hero {
@@ -1797,13 +1797,13 @@ line-height: 48px; */
         margin: 0 auto;
     }
 
-    .topnav {
+    /* .topnav {
         display: none;
     }
 
     .topnav-mobile {
         display: block;
-    }
+    } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -2310,15 +2310,15 @@ line-height: 48px; */
         top: 45%;
         font-size: 30px;
         color: #bbb;
-        z-index: 100;
+        z-index: 1;
     }
 
     .mob-prev {
-        left: 0;
+        left: 10px;
     }
 
     .mob-next {
-        right: 0;
+        right: 10px;
     }
 
 
@@ -2693,54 +2693,128 @@ line-height: 48px; */
         line-height: 25px !important;
     }
 
-    .sub-footer {
-        width: 100vw;
-        margin: -100px 0 0 14px !important;
-        overflow: hidden;
-    }
-
-    .sub-footer-content {
-        text-align: left;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 0px;
-        color: #000000;
-        /* min-width: 1140px; */
-        width: 90vw !important;
-        margin: 0 auto !important;
-    }
-
-    .sub-footer-content>h1 {
-        line-height: 36px !important;
-        font-size: 24px !important;
-        font-weight: 600;
-    }
-
-    .sub-footer-content span {
-        color: #006A4E;
-    }
-
-    .sub-footer-btn {
-        width: 80px;
-        height: 25px;
-        background: #E08433;
-        border: none;
-        color: #FFFFFF;
-        border-radius: 5px;
-        font-size: 9px;
-        font-family: 'Poppins', sans-serif;
-        box-shadow: inset 0 0 0 0 #006A4E;
-        transition: ease-out 0.3s;
-        z-index: 1;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .sub-footer-btn:hover {
-        box-shadow: inset 80px 0 0 0 #006A4E;
-        font-weight: 800;
-    }
-
     .footer-true {
         display: none;
     }
+
+    .topnav-web{
+        display: none;
+    }
+}
+
+.icon {
+    margin-top: 5px;
+    border: none;
+    background: transparent;
+}
+
+.topnav-mobile{
+    display: none;
+}
+
+.topnav-web button{
+    cursor: pointer;
+}
+
+.topnav-menu-web{
+    display: none;
+    width: 100vw;
+}
+
+.topnav-menu-links-web{
+    width: 324px;
+    height: 444px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: -200px;
+}
+
+.tmw-container{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.tmw-container hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #324A44;
+}
+.topnav-menu-links-web .active{
+    border: none;
+}
+
+.nav-link-web{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.nav-link-web:visited{
+    color: #fff;
+}
+
+.nav-link-web.active{
+    color: #63998B;
+}
+
+#nav-btn-web{
+    padding: 10px 20px;
+    color: #fff;
+background: #FFA319;
+border-radius: 6px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+position: relative;
+top: 100px;
+cursor: pointer;
+}
+
+.tmw-extras{
+    width: 1008px;
+height: 508px;
+
+background: #2A3E39;
+border-radius: 300px;
+position: relative;
+top: -100px;
+right: -200px;
+display: flex;
+align-items: center;
+}
+
+.tmw-extras img{
+    width: 210.03px;
+height: 333.1px;
+margin: 0 0 0 112px;;
+}
+
+.tmw-extras p{
+    margin: 0 0 0 72px;
+    width: 358px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+text-align: left;
+color: #FFFFFF;
+}
+
+.sd-mobile{
+    display: none;
 }
