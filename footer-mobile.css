@@ -1,76 +1,209 @@
-.footer-mobile{
+.footer-mobile {
     display: none;
 }
-.footer-true{
+
+.footer-true {
     display: block;
 }
+
 @media screen and (max-width: 1000px) {
-    .footer-true{
+    .footer-mobile {
+        display: block;
+    }
+
+    .footer-true {
         display: none;
     }
+
+    /* .footer-true{
+        display: none;
+    } */
     /* .footer-wrapper{
         display: block;
         height: 400px;
         overflow: hidden;
     } */
-    .footer-mobile{
-        position: relative;
-        display: block;
-        width: 100vw;
+    .footer-mobile {
         height: 382px;
-        margin-top: 30px;
         background: linear-gradient(102.89deg, #334541 8.59%, #1D2926 41.7%);
     }
-    .footer-mobile-content{
-        width: 100vw;
-        height: 185px;
+
+    .mobile-footer-content {
+        width: 90vw;
+        margin: 0 auto;
+        padding: 36px 0 0 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        position: relative;
+    }
+
+    .mobile-footer-content .ideas {
+        position: relative;
+        z-index: 2;
+    }
+
+    .mobile-footer-content span {
+
+        color: #1D2926;
+    }
+
+    .mobile-footer-circle {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background: #FFA319;
         position: absolute;
-        bottom: 5vw;
+        z-index: 1;
+        top: 15px;
+        left: 140px;
     }
-    .footer-mobile-top{
-        width: 300px; 
-        margin-left: 20px; 
-        display: flex; 
-        flex-direction: row; 
-        align-items: center;
-        justify-content: space-between;    
+
+    .web-contact {
+        display: none;
     }
-    .footer-mobile-vl{
-        width: 0.8px; 
-        height: 82px; 
-        background: white;
+
+    .mobile-footer-btn {
+        padding: 10px 20px;
+        margin: 24px 0 48px 0;
+        border: none;
+        background: #FFA319;
+        border-radius: 6px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
     }
-    .footer-mobile-address{
-        font-family: 'Poppins', sans-serif;
-        font-size: 12px; 
-        line-height: 24px; 
-        font-weight: 300; 
-        color: white;
-    }
-    .footer-mobile-bottom{
-        width: calc(100vw - 40px); 
-        margin: 27px auto 0 auto; 
-    }
-    .mobile-contact-links{
-        width: 191px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .mobile-contact-links a{
-        color: white;
-        font-family: 'Poppins', sans-serif;
+
+    .contact-links {
+        position: relative;
+        top: 230px;
+        font-weight: 400;
         font-size: 14px;
         line-height: 21px;
         text-decoration: underline;
-    }
-    .mobile-social-links{
-        margin-top: 20px;
-        width: 131px;
+        color: #FFFFFF;
+        width: 200px;
         display: flex;
         justify-content: space-between;
     }
-    .mobile-social-links img{
-        height: 18.66px;
+
+    .post-footer {
+        height: 91px;
+    }
+
+
+    .mobile-company-details {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: white;
+        position: relative;
+    }
+
+    .mobile-company-details .address {
+        margin: 0 0 0 0;
+        width: 320px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-company-details .ad-logo {
+        width: 132px;
+        height: 99px;
+    }
+
+    .mobile-company-details .address p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-company-details .address span {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    .mobile-footer-content .contact-links {
+        position: relative;
+        top: 38px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        text-decoration: underline;
+        color: #FFFFFF;
+        width: 188px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-footer-content .contact {
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-footer-content .contact-links a {
+        color: white;
+    }
+
+    .mobile-footer-content .contact-links a:visited {
+        color: white;
+    }
+
+    .mobile-footer-content .contact-links a:hover {
+        color: #E14B2C;
+    }
+
+    .post-footer{
+        width: 100vw;
+        background: #ECF5F3;
+        height: 40px;
+color: #3E5750;
+    }
+
+    .social-links {
+        margin-left: auto;
+        position: relative;
+        z-index: 1;
     }
     
+    .social-links img {
+        margin-left: 10px;
+    }
+    
+    .post-footer-content {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        padding: 13px 0 0 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+font-size: 10px;
+line-height: 15px;
+    }
+    .social-links img{
+        width: 11px;
+    }
 }
