@@ -19,29 +19,27 @@
         <div class="content-wrapper" id="content-wrapper">
             <div class="header-container">
                 <div class="header">
-                    <a href="../../"><img class="logo" src="../../assets/images/dt-logo.svg" alt=""></a>
-                    
-                    <div class="topnav" id="myTopnav">
-                        <a class="nav-link"></a>
-                        <a class="nav-link" href="../../">Home</a> 
-                        <a class="nav-link" href="../../about/">About Us</a>
-                        <a class="nav-link" href="../../work">Work</a>
-                        <a class="nav-link active" href="">Services</a>
-                        <a class="nav-link" href="../../contact/"><button id="nav-btn">Get in Touch</button></a>
+                    <a href="../"><img class="logo" id="logo" src="../../assets/images/dt-logo.svg" alt=""></a>
+
+                    <div class="topnav-web">
+                        <button class="icon" onclick="myFunctionWeb()">
+                            <img id="icon" src="../../assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
                     </div>
                     <div class="topnav-mobile">
-                        <button class="icon"  onclick="myFunction()">
-                            <img id="icon" src="../../assets/images/stroke.png" style="width: 22px;" alt="">
+                        <button class="icon" onclick="myFunction()">
+                            <img id="iconMobile" src="../../assets/images/stroke.png" style="width: 22px;" alt="">
                         </button>
                     </div>
                 </div>
 
+
                 <div class="topnav-menu" id="topnav-menu">
                     <div class="topnav-menu-links">
-                        <a class="nav-link" href="../../">Home</a> 
+                        <a class="nav-link" href="../../">Home</a>
                         <a class="nav-link" href="../../about/">About Us</a>
-                        <a class="nav-link" href="../../work/">Work</a>
-                        <a class="nav-link active" href="">Services</a>
+                        <a class="nav-link active" href="../../work/">Work</a>
+                        <a class="nav-link " href="../../services/">Services</a>
                         <a class="nav-link" href="../../contact/"><button id="nav-btn">Get in Touch</button></a>
                     </div>
                     <div class="topnav-img">
@@ -49,39 +47,85 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="services" id="services-desktop">
-                <div class="services-content">
-                    <div class="services-btn-container">
-                        <div class="s-btn-top">
-                            <a href="../"><button class="services-btn"> User Experience</button></a>
-                            <a href="../user-research/"><button class="services-btn"> User Research & Strategy</button></a>
-                            <a href="../presentation/"><button class="services-btn"> Presentation Design</button></a>    
-                            <a href=""><button class="services-btn services-btn-active">Visual and Branding</button></a>
-                            <a href="../other/"><button class="services-btn"> Other Services</button></a>
-                        </div>
+
+            <div class="topnav-menu-web" id="topnav-menu-web">
+                <div class="tmw-container">
+                    <div class="topnav-menu-links-web">
+                        <a class="nav-link-web " href="../../">Home</a>
+                        <hr>
+                        <a class="nav-link-web " href="../../about/">About Us</a>
+                        <hr>
+                        <a class="nav-link-web active" href="../../work/">Work</a>
+                        <hr>
+                        <a class="nav-link-web " href="../../services/">Services</a>
+                        <a class="nav-link-web" href="../../contact/"><button id="nav-btn-web">Get in Touch</button></a>
+                    </div>
+                    <div class="tmw-extras">
+                        <img src="../../assets/images/dt-eye.svg" alt="">
+                        <p>We are passionate group of technologists, strategists, and creative problem solvers seeking
+                            to make a positive impact on your business and the world around us.</p>
                     </div>
                 </div>
+
             </div>
         </div>
 
         <script>
-            function myFunction(){
+            function myFunction() {
                 var menu = document.getElementById("topnav-menu");
+                var idea = document.getElementById("ideas");
+                var iconMobile = document.getElementById("iconMobile");
+                var head = document.getElementById("content-wrapper");
+                if (menu.className == "topnav-menu") {
+                    menu.className = "topnav-menu-active";
+                    iconMobile.src = "../assets/images/cancel.png";
+                    head.style.background = "#1D2926";
+                    ideas.style.display = "none";
+                }
+                else {
+                    menu.className = "topnav-menu";
+                    iconMobile.src = "../assets/images/stroke.png"
+                    head.style.background = "white";
+                    ideas.style.display = "block";
+                }
+            }
+            function myFunctionWeb() {
+                var menu = document.getElementById("topnav-menu-web");
+                var ideasWeb = document.getElementById("ideas-web");
                 var icon = document.getElementById("icon");
                 var head = document.getElementById("content-wrapper");
-                if (menu.className == "topnav-menu"){
-                    head.style.background = "#006A4E";
+                var logo = document.getElementById('logo');
+                if (menu.className == "topnav-menu") {
                     menu.className = "topnav-menu-active";
-                    icon.src="../../assets/images/cancel.png";
+                    icon.src = "../assets/images/cancel.png";
+                    head.style.background = "#1D2926";
+                    ideasWeb.style.display = "none";
+                    logo.src = '../assets/images/dt-logo-white.svg';
                 }
-                else{
+                else {
+                    menu.className = "topnav-menu";
+                    icon.src = "../assets/images/stroke.png"
                     head.style.background = "white";
-                    menu.className="topnav-menu";
-                    icon.src="../../assets/images/stroke.png"
+                    ideasWeb.style.display = "block";
+                    logo.src = '../assets/images/dt-logo.svg';
                 }
             }
         </script>
+        
+        <div class="services" id="services-desktop">
+            <div class="services-content">
+                <!-- <div class="services-head">Services we offer:</div> -->
+                <div class="services-btn-container">
+                    <div class="s-btn-top">
+                        <a href="../"><button class="services-btn"> User Experience</button></a>
+                        <a href="../user-research/"><button class="services-btn"> User Research & Strategy</button></a>
+                        <a href="../presentation/"><button class="services-btn"> Presentation Design</button></a>
+                        <a href="../branding/"><button class="services-btn services-btn-active"> Visual and Branding</button></a>
+                        <a href="../other/"><button class="services-btn"> Other Services</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="content-w">
             <div class="services" id="services-mobile">

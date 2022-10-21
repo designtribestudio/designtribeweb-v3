@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="featured.css">
-        <link rel="stylesheet" href="../footer-mobile.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon"  type="image/png"  href="../assets/images/icons/Asset 13.svg">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;600;700&display=swap" rel="stylesheet">
-        <title>Services - User Experience</title>
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="featured.css">
+    <link rel="stylesheet" href="../footer-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../assets/images/icons/Asset 13.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;600;700&display=swap"
+        rel="stylesheet">
+    <title>Services - User Experience</title>
+</head>
+
+<body>
     <div class="body-wrap">
         <div class="content-wrapper" id="content-wrapper">
             <div class="header-container">
                 <div class="header">
-                    <a href="../"><img class="logo" src="../assets/images/dt-logo.svg" alt=""></a>
-                    
-                    <div class="topnav" id="myTopnav">
-                        <a class="nav-link"></a>
-                        <a class="nav-link" href="../">Home</a> 
-                        <a class="nav-link" href="../about/">About Us</a>
-                        <a class="nav-link" href="../work/">Work</a>
-                        <a class="nav-link active" href="">Services</a>
-                        <a class="nav-link" href="../contact/"><button id="nav-btn">Get in Touch</button></a>
+                    <a href="./"><img class="logo" id="logo" src="../assets/images/dt-logo.svg" alt=""></a>
+
+                    <div class="topnav-web">
+                        <button class="icon" onclick="myFunctionWeb()">
+                            <img id="icon" src="../assets/images/stroke.png" style="width: 22px;" alt="">
+                        </button>
                     </div>
                     <div class="topnav-mobile">
-                        <button class="icon"  onclick="myFunction()">
-                            <img id="icon" src="../assets/images/stroke.png" style="width: 22px;" alt="">
+                        <button class="icon" onclick="myFunction()">
+                            <img id="iconMobile" src="../assets/images/stroke.png" style="width: 22px;" alt="">
                         </button>
                     </div>
                 </div>
 
+
                 <div class="topnav-menu" id="topnav-menu">
                     <div class="topnav-menu-links">
-                        <a class="nav-link" href="../">Home</a> 
+                        <a class="nav-link" href="../">Home</a>
                         <a class="nav-link" href="../about/">About Us</a>
-                        <a class="nav-link" href="../work/">Work</a>
-                        <a class="nav-link active" href="../services/">Services</a>
+                        <a class="nav-link active" href="../work/">Work</a>
+                        <a class="nav-link " href="../services/">Services</a>
                         <a class="nav-link" href="../contact/"><button id="nav-btn">Get in Touch</button></a>
                     </div>
                     <div class="topnav-img">
@@ -49,39 +50,86 @@
                     </div>
                 </div>
             </div>
-            <div class="services" id="services-desktop">
-                <div class="services-content">
-                    <!-- <div class="services-head">Services we offer:</div> -->
-                    <div class="services-btn-container">
-                        <div class="s-btn-top">
-                            <a href=""><button class="services-btn  services-btn-active"> User Experience</button></a>
-                            <a href="./user-research/"><button class="services-btn"> User Research & Strategy</button></a>
-                            <a href="./presentation/"><button class="services-btn"> Presentation Design</button></a> 
-                            <a href="./branding/"><button class="services-btn"> Visual and Branding</button></a>
-                            <a href="./other/"><button class="services-btn"> Other Services</button></a>
-                        </div>
+
+            <div class="topnav-menu-web" id="topnav-menu-web">
+                <div class="tmw-container">
+                    <div class="topnav-menu-links-web">
+                        <a class="nav-link-web " href="../">Home</a>
+                        <hr>
+                        <a class="nav-link-web " href="../about/">About Us</a>
+                        <hr>
+                        <a class="nav-link-web active" href="../work/">Work</a>
+                        <hr>
+                        <a class="nav-link-web " href="../services/">Services</a>
+                        <a class="nav-link-web" href="../contact/"><button id="nav-btn-web">Get in Touch</button></a>
+                    </div>
+                    <div class="tmw-extras">
+                        <img src="../assets/images/dt-eye.svg" alt="">
+                        <p>We are passionate group of technologists, strategists, and creative problem solvers seeking
+                            to make a positive impact on your business and the world around us.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var menu = document.getElementById("topnav-menu");
+                var idea = document.getElementById("ideas");
+                var iconMobile = document.getElementById("iconMobile");
+                var head = document.getElementById("content-wrapper");
+                if (menu.className == "topnav-menu") {
+                    menu.className = "topnav-menu-active";
+                    iconMobile.src = "../assets/images/cancel.png";
+                    head.style.background = "#1D2926";
+                    ideas.style.display = "none";
+                }
+                else {
+                    menu.className = "topnav-menu";
+                    iconMobile.src = "../assets/images/stroke.png"
+                    head.style.background = "white";
+                    ideas.style.display = "block";
+                }
+            }
+            function myFunctionWeb() {
+                var menu = document.getElementById("topnav-menu-web");
+                var ideasWeb = document.getElementById("ideas-web");
+                var icon = document.getElementById("icon");
+                var head = document.getElementById("content-wrapper");
+                var logo = document.getElementById('logo');
+                if (menu.className == "topnav-menu") {
+                    menu.className = "topnav-menu-active";
+                    icon.src = "../assets/images/cancel.png";
+                    head.style.background = "#1D2926";
+                    ideasWeb.style.display = "none";
+                    logo.src = '../assets/images/dt-logo-white.svg';
+                }
+                else {
+                    menu.className = "topnav-menu";
+                    icon.src = "../assets/images/stroke.png"
+                    head.style.background = "white";
+                    ideasWeb.style.display = "block";
+                    logo.src = '../assets/images/dt-logo.svg';
+                }
+            }
+        </script>
+        
+        <div class="services" id="services-desktop">
+            <div class="services-content">
+                <!-- <div class="services-head">Services we offer:</div> -->
+                <div class="services-btn-container">
+                    <div class="s-btn-top">
+                        <a href=""><button class="services-btn  services-btn-active"> User Experience</button></a>
+                        <a href="./user-research/"><button class="services-btn"> User Research & Strategy</button></a>
+                        <a href="./presentation/"><button class="services-btn"> Presentation Design</button></a>
+                        <a href="./branding/"><button class="services-btn"> Visual and Branding</button></a>
+                        <a href="./other/"><button class="services-btn"> Other Services</button></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script>
-            function myFunction(){
-                var menu = document.getElementById("topnav-menu");
-                var icon = document.getElementById("icon");
-                var head = document.getElementById("content-wrapper");
-                if (menu.className == "topnav-menu"){
-                    head.style.background = "#006A4E";
-                    menu.className = "topnav-menu-active";
-                    icon.src="../assets/images/cancel.png";
-                }
-                else{
-                    head.style.background = "white";
-                    menu.className="topnav-menu";
-                    icon.src="../assets/images/stroke.png"
-                }
-            }
-        </script>
 
         <div class="content-w">
             <div class="services" id="services-mobile">
@@ -90,21 +138,24 @@
                     <div class="services-btn-container">
                         <div class="s-btn-top">
                             <a href=""><button class="services-btn  services-btn-active"> User Experience</button></a>
-                            <a href="./user-research/"><button class="services-btn"> User Research & Strategy</button></a>
-                            <a href="./presentation/"><button class="services-btn"> Presentation Design</button></a> 
+                            <a href="./user-research/"><button class="services-btn"> User Research &
+                                    Strategy</button></a>
+                            <a href="./presentation/"><button class="services-btn"> Presentation Design</button></a>
                             <a href="./branding/"><button class="services-btn"> Visual and Branding</button></a>
                             <a href="./other/"><button class="services-btn"> Other Services</button></a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div class="hero">
                 <!-- <img src="./uxui-head.png" alt=""> -->
                 <div class="hero-text">
                     <div class="hero-head">What is UX/UI?</div>
-                    <div class="hero-sub">Re-imagining and re-defining user experiences across platforms and digital ecosystems. We can drive your transformation as human-centric design is deeply rooted in our every design.</div>
+                    <div class="hero-sub">Re-imagining and re-defining user experiences across platforms and digital
+                        ecosystems. We can drive your transformation as human-centric design is deeply rooted in our
+                        every design.</div>
                 </div>
                 <div class="hero-img">
                     <img class="brand-pic" src="../assets/images/ux.gif" alt="">
@@ -113,11 +164,12 @@
             <div class="hero-mobile">
                 <img src="../assets/images/ux.gif" alt="">
                 <h1>What is UX/UI?</h1>
-                <p>Re-imagining and re-defining user experiences across platforms and digital ecosystems. We can drive your transformation as human-centric design is deeply rooted in our every design.</p>
+                <p>Re-imagining and re-defining user experiences across platforms and digital ecosystems. We can drive
+                    your transformation as human-centric design is deeply rooted in our every design.</p>
             </div>
         </div>
 
-        
+
         <!-- <div class="nav-banner">
             <div class="nav-banner-content">
                 <p>All Services</p>
@@ -144,7 +196,9 @@
                         Discovery Call
                     </div>
                     <div class="how-a">
-                        This is where our team will attempt to define your goals, perform problem discovery, and identify potential solution to your problem. We will want to gain as much information about your product, your target audience, pain-points, competitors, etc. 
+                        This is where our team will attempt to define your goals, perform problem discovery, and
+                        identify potential solution to your problem. We will want to gain as much information about your
+                        product, your target audience, pain-points, competitors, etc.
                     </div>
                 </div>
                 <div class="how-topic">
@@ -152,7 +206,9 @@
                         Design Phase
                     </div>
                     <div class="how-a">
-                        Here, we get to work. We begin designing your product on back of research we conduct ourselves. We make sure that all requirements are being met, while accurately representing your branding and keeping the flow as intuitive as possible. 
+                        Here, we get to work. We begin designing your product on back of research we conduct ourselves.
+                        We make sure that all requirements are being met, while accurately representing your branding
+                        and keeping the flow as intuitive as possible.
                     </div>
                 </div>
                 <div class="how-topic">
@@ -160,7 +216,10 @@
                         Build Phase
                     </div>
                     <div class="how-a">
-                        This phase is optional and up to the client if they’re happy with the designs and want to get it developed from elsewhere, then no problem. With us, in this phase is where the product comes to life. We will proceed to build your product making sure everything is optimised to follow modern web practices, such as speed, security, and reliability.
+                        This phase is optional and up to the client if they’re happy with the designs and want to get it
+                        developed from elsewhere, then no problem. With us, in this phase is where the product comes to
+                        life. We will proceed to build your product making sure everything is optimised to follow modern
+                        web practices, such as speed, security, and reliability.
                     </div>
                 </div>
                 <div class="how-topic">
@@ -168,7 +227,9 @@
                         Launch Phase
                     </div>
                     <div class="how-a">
-                        Post your approval, we’ll launch the product. To attract and gain new customers, we also perform social media campaigns to build an interest. We’ll also be providing training videos so that you can add content by yourself as well. 
+                        Post your approval, we’ll launch the product. To attract and gain new customers, we also perform
+                        social media campaigns to build an interest. We’ll also be providing training videos so that you
+                        can add content by yourself as well.
                     </div>
                 </div>
             </div>
@@ -182,7 +243,7 @@
         </div>
         <div class="info-mobile">
             <div class="info-head">
-                UX/UI Services 
+                UX/UI Services
             </div>
             <img src="./uiux-img-2.png" alt="">
             <div class="info-content">
@@ -191,7 +252,8 @@
                         How will it help your business?
                     </div>
                     <div class="info-a">
-                        An interactive UI/UX keeps users hooked and customers satisfied. It also increases the return of investment!
+                        An interactive UI/UX keeps users hooked and customers satisfied. It also increases the return of
+                        investment!
                     </div>
                 </div>
                 <div class="info-topic">
@@ -199,13 +261,15 @@
                         How do we help you?
                     </div>
                     <div class="info-a">
-                        We will help you create products that provide meaningful and relevant experiences to users.  This involves the design of the entire process of acquiring and integrating the product, including aspects of branding, design, usability and function.
+                        We will help you create products that provide meaningful and relevant experiences to users. This
+                        involves the design of the entire process of acquiring and integrating the product, including
+                        aspects of branding, design, usability and function.
                     </div>
                 </div>
             </div>
         </div>
 
-        
+
         <div class="featured-container" style="margin: 5vw auto;">
             <div class="featured fade-in">
                 <div class="featured-cards">
@@ -220,7 +284,7 @@
                     <div class="fc4 fc">
                         <div class="work-card-text">
                             <div class="work-card-head">Personalised Food
-                            Experience</div>
+                                Experience</div>
                             <div class="tooltip">
                                 <span class="tooltiptext">Story under NDA</span>
                             </div>
@@ -233,14 +297,17 @@
         <div class="featured-container-mobile">
             <p>View our related work here</p>
             <div class="featured-cards-mobile">
-                <div class="card-mobile cm1"><div class="nda-tag">Story under NDA</div></div>
+                <div class="card-mobile cm1">
+                    <div class="nda-tag">Story under NDA</div>
+                </div>
             </div>
         </div>
-        
+
         <div class="sub-footer fade-in">
             <div class="sub-footer-content">
                 <h1>We say yes to <span>ideas</span>.<br> Let’s discuss one</h1>
-                <a href="../contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in Touch</button></a>
+                <a href="../contact" style="text-decoration: none;"><button class="sub-footer-btn">Get in
+                        Touch</button></a>
             </div>
         </div>
 
@@ -250,7 +317,8 @@
                     <div class="address">
                         <img class="ad-logo" src="./images/Group 134.png" alt="">
                         <img class="footer-vl" src="./images/Rectangle 98.png" alt="" style="height: 102px;">
-                        <p><span style="font-weight:bold;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011</p>
+                        <p><span style="font-weight:bold;">UXUI Studio Private Limited</span><br> B 214, The Suvidha
+                            CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011</p>
                     </div>
                     <div class="contact">
                         <div class="contact-links">
@@ -260,9 +328,12 @@
                         </div>
                         <div class="social-links">
                             <a href="../contact/" target="_blank"><img src="../assets/images/mail.svg" alt=""></a>
-                            <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img src="../assets/images/linkedin.svg" alt=""></a>
-                            <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img src="../assets/images/ig.svg" alt=""></a>
-                            <a href="https://www.facebook.com/designtribestudio" target="_blank"><img src="../assets/images/fb.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                                    src="../assets/images/linkedin.svg" alt=""></a>
+                            <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                                    src="../assets/images/ig.svg" alt=""></a>
+                            <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                                    src="../assets/images/fb.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -276,7 +347,8 @@
                     </div>
                     <div class="footer-mobile-vl"></div>
                     <div class="footer-mobile-address">
-                        <span style="font-weight: 600;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS, <br> GH 10, Gurugram,<br> Haryana, 122011
+                        <span style="font-weight: 600;">UXUI Studio Private Limited</span><br> B 214, The Suvidha CGHS,
+                        <br> GH 10, Gurugram,<br> Haryana, 122011
                     </div>
                 </div>
                 <div class="footer-mobile-bottom">
@@ -287,14 +359,18 @@
                     </div>
                     <div class="mobile-social-links">
                         <a href="../contact/" target="_blank"><img src="../assets/images/mail-large.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img src="../assets/images/linkedin.svg" alt=""></a>
-                        <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img src="../assets/images/ig.svg" alt=""></a>
-                        <a href="https://www.facebook.com/designtribestudio" target="_blank"><img src="../assets/images/fb.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/company/uxui-studio-pvt-ltd/" target="_blank"><img
+                                src="../assets/images/linkedin.svg" alt=""></a>
+                        <a href="https://www.instagram.com/design_tribe_studio/" target="_blank"><img
+                                src="../assets/images/ig.svg" alt=""></a>
+                        <a href="https://www.facebook.com/designtribestudio" target="_blank"><img
+                                src="../assets/images/fb.svg" alt=""></a>
                     </div>
                 </div>
             </div>
-        </div> 
-    </div>    
+        </div>
+    </div>
     <script src="../script.js"></script>
-    </body>
+</body>
+
 </html>

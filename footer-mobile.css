@@ -370,8 +370,11 @@ color: #FFFFFF;
     .topnav-web{
         display: none;
     }
-    .header-container{
-        width: 100vw;
+    .header-container {
+        width: 100vw !important;
+        /* margin-left: 14px; */
+        padding-top: 20px;
+        height: 60px !important;
     }
     .topnav-mobile{
         display: block !important;
