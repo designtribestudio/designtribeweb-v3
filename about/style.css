@@ -143,7 +143,7 @@ body{
 .grid-item > img{
     /* min-width: 335px; */
     /* width: 23.3268vw; */
-    width: auto;
+    width: 334px;
 }
 .approach{
     width: 100vw;
