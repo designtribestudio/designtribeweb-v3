@@ -33,7 +33,7 @@ body {
 .header-container {
     width: 1140px;
     padding: 0;
-    height: 90px;
+    height: 60px !important;
     margin: 0 auto 0 auto;
     padding-top: 25px;
 }
@@ -370,10 +370,34 @@ color: #FFFFFF;
     .topnav-web{
         display: none;
     }
-
+    .header-container{
+        width: 100vw;
+    }
     .topnav-mobile{
         display: block !important;
     }
+    .topnav{
+        display: none;
+    }
+    .topnav-mobile{
+        display: block;
+    }
+    .topnav-menu-links{
+        margin-top: -20px;
+        height: 293px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .topnav-menu-links a{
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
+     
     .footer-mobile {
         display: block;
     }
