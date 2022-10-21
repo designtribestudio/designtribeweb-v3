@@ -8,10 +8,6 @@ body{
     margin: 0 auto;
 }
 
-.logo{
-    margin-top: -5px;
-}
-    
 .navbar{
     display: flex;
     flex-direction: row;

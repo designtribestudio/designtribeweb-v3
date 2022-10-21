@@ -79,6 +79,8 @@
     width: 100vw;
     background: linear-gradient(180deg, rgba(249, 249, 249, 0.5) 0%, rgba(229, 229, 229, 0.55) 100%);
     backdrop-filter: blur(7.5px);
+    position: relative;
+    z-index: -1;
 }
 
 .how-container{
@@ -124,6 +126,7 @@ line-height: 21px;
     margin: 120px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .info-text{
@@ -163,7 +166,17 @@ width: 590px;
     /* min-width: 1140px; */
     width: var(--width);
     height: fit-content;
-    margin: 0 auto 0 auto; 
+    margin: 50px auto 100px auto; 
+}
+
+.featured-head{
+    width: 1140px;
+    margin: 0 auto;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
 }
 
 .featured h1{

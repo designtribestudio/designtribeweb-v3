@@ -13,42 +13,12 @@ body{
 /* html{
     overflow-x: hidden;
 } */
-.content-wrapper{
-    width: 100vw;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(15px);
-    /* border: 5px blue; */
-    z-index: 999;
-}
 .content-w{
     position: relative;
     width: var(--width);
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
-}
-.header-container{
-    margin: 0;
-    padding: 0;
-    /* min-width: 1140px; */
-    width: var(--width);
-    height: 90px;
-    margin: 25px auto 0 auto;
-}
-.header{
-    position: relative;
-    margin: 25px auto 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.header-home{
-    height: 45px;
 }
 
 .navbar{
