@@ -209,6 +209,7 @@ color: #FFFFFF;
 .footer-content .ideas {
     position: relative;
     z-index: 2;
+    display: block;
 }
 
 .footer-content span {
@@ -431,6 +432,7 @@ color: #FFFFFF;
     .mobile-footer-content .ideas {
         position: relative;
         z-index: 2;
+        display: block;
     }
 
     .mobile-footer-content span {

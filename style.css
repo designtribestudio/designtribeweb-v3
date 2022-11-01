@@ -1435,6 +1435,10 @@ line-height: 48px; */
     display: flex;
 }
 
+.sd-mobile{
+    display: none;
+}
+
 .sd-card {
     width: 533px;
     height: calc(717px - 80px);
@@ -2438,6 +2442,3 @@ line-height: 48px; */
     }
 }
 
-.sd-mobile{
-    display: none;
-}
