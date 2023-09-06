@@ -94,3 +94,241 @@ backdrop-filter: blur(61.0169px);
 .vitran-dist-items{
     margin: 190px auto;
 }
+
+.similar-stories-container{
+    padding: 0 0 100px 0;
+}
+.vhc{
+    display: none;
+}
+
+.vic{
+    display: none;
+}
+
+.vibc{
+    display: none;
+}
+
+.vrc{
+    display: none;
+}
+
+.back-to-top{
+    display: none;
+}
+
+.vufc, .pmc, .ufdc, .sgc, .tfc, .vdc{
+    display: none;
+}
+@media screen and (max-width: 1000px){
+    .vitran-hero-container{
+        display: none;
+    }
+    .vhc{
+        display: block;
+        position: relative;
+        margin-top: 80px;
+        width: 100vw;
+        height: 178px;
+        background: linear-gradient(123.76deg, #72132C 5.09%, #BF345E 37.38%, #72132C 82.03%);
+    backdrop-filter: blur(30.5085px);
+    }    
+    .vh{
+        width: 351px;
+        margin: 0 auto;
+        padding: 26px 0;
+    }
+    .vhc .vh img{
+        width: 100%;
+    }
+
+    .vitran-info-container{
+        display: none;
+    }
+
+    .vic{
+        display: block;
+        width: 100vw;
+        margin-top: 180px;
+    }
+
+    .vi{
+        width: 351px;
+        margin: 0 auto;
+    }
+
+    .vic .vi img{
+        width: 100%;
+    }
+
+    .vitran-info-banner-container{
+        display: none;
+    }
+
+    .vibc{
+        display: block;
+        width: 100vw;
+        background: linear-gradient(-180deg, transparent 25%, #422C57 25%);
+        margin-top: 50px;
+    }
+
+    .vib{
+        width: 100vw;
+        max-width: 390px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .vibc .vib img{
+        width: 100%;
+    }
+
+    .vitran-fmcg-container{
+        display: none;
+    }
+
+    .vitran-roles-container{
+        display: none;
+    }
+
+    .vrc{
+        display: block;
+        width: 100%;
+    }
+
+    .vr{
+        width: 351px;
+        margin: 0 auto;
+    }
+
+    .vrc .vr img{
+        width: 100%;
+    }
+
+    .vitran-user-flow-container{
+        display: none;
+    }
+
+    .vufc{
+        display: block;
+        width: 100vw;
+    }
+
+    .vuf{
+        width: 100vw;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .vufc .vuf img{
+        width: 100%;
+    }
+
+    .pmc{
+        display: block;
+        width: 100vw;
+    }
+
+    .pm{
+        width: 100vw;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .pmc .pm img{
+        width: 100%;
+    }
+
+    .ufdc{
+        display: block;
+        width: 100vw;
+        background: linear-gradient(-180deg, transparent 45%, #043A2C 45%);
+        padding: 0 0 25px 0;
+    }
+
+    .ufd{
+        width: 100vw;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .ufdc .ufd img{
+        width: 100%;
+    }
+
+    .style-guide-container{
+        display: none;
+    }
+    .sgc{
+        display: block;
+        width: 100vw;
+    }
+
+    .sg{
+        width: 100vw;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .sgc .sg img{
+        width: 100%;
+        max-width: 370.5px;
+        margin-left: 19.5px;
+    }
+
+    .tfc{
+        display: block;
+        width: 100vw;
+    }
+
+    .tf{
+        width: 351px;
+        margin: 0 auto;
+    }
+
+    .tfc .tf img{
+        width: 100%;
+    }
+
+    .vitran-dist-container{
+        display: none;
+    }
+    .vdc{
+        display: block;
+        width: 100vw;
+        padding: 0 0 70px 0;
+    }
+
+    .vd{
+        width: 100vw;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .vdc .vd img{
+        width: 100%;
+    }
+
+    .similar-stories-container{
+        display: none;
+    }
+
+    .back-to-top, .back-to-top button {
+        display: block;
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        position: relative;
+        float: right;
+        top: -30px;
+        right: 15px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        width: 125px;
+        justify-content: space-between;
+    }
+}

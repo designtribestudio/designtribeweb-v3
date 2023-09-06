@@ -1638,6 +1638,8 @@ line-height: 48px; */
     } */
     .hero-text {
         margin-top: -850px !important;
+        width: 90vw;
+        max-width: 351px;
     }
 
     #h-top {
@@ -1649,6 +1651,7 @@ line-height: 48px; */
     #h-mid {
         margin-left: 0;
         width: 90vw !important;
+        max-width: 351px;
         font-size: 36px !important;
         line-height: 48px !important;
         height: 170px;
@@ -1662,7 +1665,8 @@ line-height: 48px; */
 
     #h-bottom {
         margin-left: 0;
-        width: 90vw !important;
+        width: 90vw;
+        max-width: 351px;
         font-size: 12px;
         line-height: 25px;
     }
@@ -1700,6 +1704,7 @@ line-height: 48px; */
     .partners-container-mobile {
         display: block !important;
         width: 90vw;
+        max-width: 351px;
         margin: 100px auto 0 auto;
     }
 
@@ -1716,12 +1721,14 @@ line-height: 48px; */
 
     .partner-outer-top {
         width: 95vw;
+        max-width: 351px;
         margin: 0 auto;
         justify-content: space-evenly;
     }
 
     .partner-outer-bottom {
         width: 50vw;
+        max-width: 185px;
         margin: 0 auto;
         justify-content: space-evenly;
     }
